@@ -4,6 +4,10 @@ const getAll = () => usersRepo.getAll();
 
 const getUserByID = (id) => usersRepo.getUserById(id);
 
-const postUSER = (user) => usersRepo.postUSER(user);
+const postUser = (user) => usersRepo.postUser(user);
 
-module.exports = { getAll, postUSER, getUserByID };
+const deleteUser = (id) => usersRepo.deleteUser(id);
+
+// const updateUser = (id, reqBody) => usersRepo.updateUser(id, reqBody);
+
+module.exports = { getAll, postUser, getUserByID, deleteUser  };
