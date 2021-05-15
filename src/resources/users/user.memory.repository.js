@@ -1,3 +1,5 @@
+const taskRepo = require('../tasks/task.memory.repository')
+
 const USERS = [];
 
 const getAll = async () => 
@@ -16,10 +18,21 @@ const postUser = async (user) => {
 };
 
 const deleteUser = async(id) => {
-  console.log(id);
+  // console.log(id);
   const userId = USERS.findIndex((user) => user.id === id);
   USERS.splice(userId, 1)
-  console.log(USERS);
+  const tasks = await taskRepo.getAllTasks();
+  // console.log(tasks, '1');
+  tasks.forEach((tsk) => {
+    if (tsk.userId === id) {
+      Object.assign(tsk, {userId: null })
+      // tsk.userId = null
+      
+    }
+    
+  })
+  // console.log(tasks, '2');
+  // console.log(USERS);
   
 }
 
