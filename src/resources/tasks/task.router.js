@@ -21,7 +21,6 @@ router.route('/:boardId/tasks/:taskId').get(async (req, res) => {
   const {boardId, taskId} = req.params;
   
   const task = await taskService.getTaskByBoardIdAndTaskId(boardId, taskId);
-  // console.log(task);
   if (task === false) {
     res.status(404).send('not found')
   } else {
@@ -42,7 +41,6 @@ router.route('/:boardId/tasks/:taskId').put(async (req, res) => {
 router.route('/:boardId/tasks/:taskId').delete(async (req,res) => {
   const {boardId, taskId} = req.params;
   await taskService.deleteTask(boardId, taskId)
-  // console.log(deletedTask);
 
   res.status(200).send('smth');
 

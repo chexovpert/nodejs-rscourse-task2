@@ -9,8 +9,6 @@ const postBoard = async (board) => {
 };
 const getBoardById = async (id) => {
   const boardById = BOARDS.find((board) => board.id === id);
-  if (boardById === undefined) {
-    return false}
   return boardById;
 };
 
@@ -23,20 +21,12 @@ const updateBoard = async (id, reqBody) => {
 };
 
 const deleteBoard = async (id) => {
-  const boardId = BOARDS.findIndex((board) => board.id === id);
-  BOARDS.splice(boardId, 1);
-  const tasks = await taskRepo.getAllTasks()
-  // console.log(tasks, "log1", id);
-  tasks.forEach((tsk, ixd, array) => {
-    if (tsk.boardId === id) {
-      
-      array.splice(ixd, 1)
-      
-    }
-    
-  })
-  // console.log(tasks, "log2");
-  return true
+  const tasks = await taskRepo.getAllTaskByBoardId(id)
+  Promise.all(tasks.map(async (task) =>{
+    await taskRepo.deleteTask(task.boardId, task.id)
+}))
+const idNum = BOARDS.findIndex((board)=>board.id === id)
+BOARDS.splice(idNum, 1)
 };
 
 module.exports = { getAll, postBoard, getBoardById, deleteBoard, updateBoard };
