@@ -1,12 +1,28 @@
 const taskRepo = require('../tasks/task.memory.repository')
 
 const BOARDS = [];
-
+/**
+ * Returns all boards from in-memory DB
+ * @returns {Promise<Array>}
+ */
 const getAll = async () => BOARDS;
+/**
+ * Creates a new user
+ * @param {Object} board 
+ * @param {string} board.name 
+ * @param {string} board.login 
+ * @param {string} board.password 
+ * @returns {Promise<Board>}
+ */
 const postBoard = async (board) => {
   BOARDS.push(board);
   return board;
 };
+/**
+ * Creates a new user
+ * @param {string} id 
+ * @returns {Promise<Board[] | {}>}
+ */
 const getBoardById = async (id) => {
   const boardById = BOARDS.find((board) => board.id === id);
   return boardById;
