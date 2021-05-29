@@ -1,10 +1,18 @@
 import { v4 as uuid } from 'uuid';
+interface IReqTask  {
+  title: string,
+  order: number,
+  description: string,
+  userId: string,
+  columnId: string,
+  boardId: string,
+}
 class Task {
     id: string;
     title: string;
     order: number;
     description: string;
-    userId: string;
+    userId: string | null;
     columnId: string;
     boardId: string;
   constructor({
@@ -14,7 +22,7 @@ class Task {
     description = 'task descr',
     userId = "",
     columnId = "",
-    boardId = "",
+    boardId = "undefined",
   } = {}) {
     this.id = id;
     this.title = title;
@@ -27,4 +35,4 @@ class Task {
 
 }
 
-module.exports = Task;
+export  {Task, IReqTask};

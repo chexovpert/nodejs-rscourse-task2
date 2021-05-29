@@ -4,7 +4,7 @@ interface IReqUser  {
     name: string,
     login: string,
     password: string,
-  };
+  }
 class User {
     id: string;
     name: string;

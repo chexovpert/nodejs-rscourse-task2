@@ -1,4 +1,4 @@
-//import taskServ from '../tasks/task.service';
+import {getAllTasksService} from '../tasks/task.service';
 import {User, IReqUser} from "./user.module"
 
 const USERS: User[] = [];
@@ -15,17 +15,17 @@ const postUser = async (user: User) : Promise<User> => {
   return user;
 };
 
-// const deleteUser = async (id: string) : Promise<void> => {
-//   const userId = USERS.findIndex((user) => user.id === id);
-//   USERS.splice(userId, 1);
-//   const tasks = await taskServ.getAllTasks();
-//   tasks.forEach((tsk) => {
-//     if (tsk.userId === id) {
-//       Object.assign(tsk, { userId: null });
-//       // tsk.userId = null
-//     }
-//   });
-// };
+const deleteUser = async (id: string) : Promise<void> => {
+  const userId = USERS.findIndex((user) => user.id === id);
+  USERS.splice(userId, 1);
+  const tasks = await getAllTasksService();
+  tasks.forEach((tsk) => {
+    if (tsk.userId === id) {
+      Object.assign(tsk, { userId: null });
+      //tsk.userId = null
+    }
+  });
+};
 
 const updateUser = async (id: string, reqBody: IReqUser) : Promise<User| undefined>  => {
   const { name, login, password } = reqBody;
@@ -42,4 +42,4 @@ const updateUser = async (id: string, reqBody: IReqUser) : Promise<User| undefin
   
 };
 
-export { getAll, postUser, getUserById, updateUser };
+export { getAll, postUser, getUserById, updateUser, deleteUser };

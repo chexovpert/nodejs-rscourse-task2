@@ -1,9 +1,9 @@
 import {Router, Request, Response} from "express"
 import {User, IReqUser} from './user.module';
-import {getAllService,  postUserService, getUserByIdService, updateUserService } from './user.service';
+import {getAllService,  postUserService, getUserByIdService, updateUserService, deleteUserService } from './user.service';
 
 const router = Router();
-router.route('/').get(async (_req: Request, res: Response) => {
+router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
   const users = await getAllService();
   res.status(200).json(users.map(User.toResponse));
 
@@ -16,7 +16,7 @@ router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
   res.status(201).json(User.toResponse(post));
 });
 
-router.route('/:id').get(async (req: Request, res: Response) => {
+router.route('/:id').get(async (req: Request, res: Response) : Promise<void> => {
   const { id } = req.params;
   const user = await getUserByIdService(id);
   if (user !== undefined) {
@@ -26,7 +26,7 @@ router.route('/:id').get(async (req: Request, res: Response) => {
   }
 });
 
-router.route('/:id').put(async (req, res) => {
+router.route('/:id').put(async (req, res) : Promise<void> => {
   const {id} = req.params;
   const reqBody = req.body
   const user = await updateUserService(id, reqBody)
@@ -37,11 +37,11 @@ router.route('/:id').put(async (req, res) => {
   }
 })
 
-// router.route('/:id').delete(async (req, res) => {
-//   const {id} = req.params;
-//   await usersService.deleteUser(id);
-//   res.status(200).send('User has been deleted')
+router.route('/:id').delete(async (req, res) : Promise<void> => {
+  const {id} = req.params;
+  await deleteUserService(id);
+  res.status(200).send('User has been deleted')
 
-// })
+})
 
 export default router;

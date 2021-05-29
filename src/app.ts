@@ -3,6 +3,7 @@ import swaggerUI from 'swagger-ui-express'
 import path from 'path';
 import * as YAML from 'yamljs';
 import userRouter from './resources/users/user.router';
+import taskRouter from './resources/tasks/task.router';
 //const boardRouter = require('./resources/boards/board.router');
 //const taskRouter = require('./resources/tasks/task.router');
 const app = express();
@@ -22,6 +23,6 @@ app.use('/', (req, res, next) => {
 
 app.use('/users', userRouter);
 //app.use('/boards', boardRouter);
-//app.use('/boards', taskRouter);
+app.use('/boards', taskRouter);
 
 export default app;

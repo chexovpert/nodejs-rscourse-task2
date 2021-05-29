@@ -1,26 +1,22 @@
-import { getAll, postUser, getUserById, updateUser } from'./user.memory.repository';
+import { getAll, postUser, getUserById, updateUser, deleteUser } from'./user.memory.repository';
 import {User, IReqUser} from "./user.module"
 
-const getAllService = () => getAll();
+const getAllService = () : Promise<User[]> => getAll();
 
 
-const getUserByIdService = (id: string | undefined) => getUserById(id);
+const getUserByIdService = (id: string | undefined): Promise<User| undefined> => getUserById(id);
 
-/**
- * Creates a new user service
- * @param {User} user
- * @returns {Promise<User>}
- */
-const postUserService = (user: User) => postUser(user);
+
+const postUserService = (user: User): Promise<User> => postUser(user);
 
 /**
  * Deletes a user by ID service
  * @param {string} id
  * @returns {Promise<void>}
  */
-//const deleteUserService = (id) => usersRepo.deleteUser(id);
+const deleteUserService = (id: string): Promise<void> => deleteUser(id);
 
 
 const updateUserService = (id: string, reqBody: IReqUser) => updateUser(id, reqBody);
 
-export { getAllService, postUserService, getUserByIdService, updateUserService };
+export { getAllService, postUserService, getUserByIdService, updateUserService, deleteUserService };
