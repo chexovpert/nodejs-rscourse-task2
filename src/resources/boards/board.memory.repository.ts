@@ -1,8 +1,8 @@
-"use strict";
 // const taskServ = require('../tasks/task.service');
 // const Board = require('./board.model');
 // //const Column = require('../columns/column.model');
 // /** @module Board_Memory */
+
 // /**
 //  * @typedef reqBody
 //  * @property {string} title board title
@@ -60,4 +60,5 @@
 //   const idNum = BOARDS.findIndex((board) => board.id === id);
 //   BOARDS.splice(idNum, 1);
 // };
+
 // module.exports = { getAll, postBoard, getBoardById, deleteBoard, updateBoard };
