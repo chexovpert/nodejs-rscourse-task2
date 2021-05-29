@@ -23,6 +23,7 @@ class Board {
     const columnList = column.map((col) => new Column(col));
     this.columns = columnList;
   }
+
   /**
    * Return board params
    * @property {Function} toResponse

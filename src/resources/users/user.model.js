@@ -28,6 +28,7 @@ class User {
     this.login = login;
     this.password = password;
   }
+
   /**
    * Return user without password
    * @property {Function} toResponse
