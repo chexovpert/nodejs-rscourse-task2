@@ -1,15 +1,6 @@
 const usersRepo = require('./user.memory.repository');
-// const User = require('./user.model');
+const User = require('./user.model');
 /** @module User_Service */
-
-/**
- * User
- * @typedef {Object} User
- * @property {string} id - User ID
- * @property {string} name - User name
- * @property {string} login - User login
- * @property {string} password - User login
- */
 
 /**
  * Request body for user

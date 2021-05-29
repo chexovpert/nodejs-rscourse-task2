@@ -1,6 +1,7 @@
 const boardRepo = require('./board.memory.repository');
 const Board = require('./board.model');
 const Column = require('../columns/column.model');
+/** @module Board_Service */
 /**
  * @typedef reqBody
  * @property {string} title board title

@@ -19,8 +19,8 @@ class Board {
   constructor({ id = uuid(), title = 'title', columns = [] } = {}) {
     this.id = id;
     this.title = title;
-    const column = [...columns];
-    const columnList = column.map((col) => new Column(col));
+    // const column = [...columns];
+    const columnList = columns.map((col) => new Column(col));
     this.columns = columnList;
   }
 

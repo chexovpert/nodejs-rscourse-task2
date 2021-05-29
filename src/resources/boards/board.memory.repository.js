@@ -1,6 +1,8 @@
-const taskRepo = require('../tasks/task.memory.repository');
+const taskServ = require('../tasks/task.service');
 const Board = require('./board.model');
 const Column = require('../columns/column.model');
+/** @module Board_Memory */
+
 /**
  * @typedef reqBody
  * @property {string} title board title
@@ -49,10 +51,10 @@ const updateBoard = async (id, reqBody) => {
  * @returns {Promise<void>}
  */
 const deleteBoard = async (id) => {
-  const tasks = await taskRepo.getAllTaskByBoardId(id);
+  const tasks = await taskServ.getAllTaskByBoardId(id);
   Promise.all(
     tasks.map(async (task) => {
-      await taskRepo.deleteTask(task.boardId, task.id);
+      await taskServ.deleteTask(task.boardId, task.id);
     })
   );
   const idNum = BOARDS.findIndex((board) => board.id === id);

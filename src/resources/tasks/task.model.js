@@ -1,6 +1,19 @@
 const { v4: uuid } = require('uuid');
 
+/**
+ * Class to create a task
+ * @constructor
+ */
 class Task {
+  /**
+   * @property {string} id task id
+   * @property {string} title task name
+   * @property {number} order task order
+   * @property {string} description task description
+   * @property {string} userId id of user who created task
+   * @property {string} columnId id of column to which this task belongs to
+   * @property {string} boardId id of board to which this task belongs to
+   */
   constructor({
     id = uuid(),
     title = 'task',
@@ -19,10 +32,6 @@ class Task {
     this.boardId = boardId;
   }
 
-  static toResponse(task) {
-    const { id, title, order, description, userId } = task;
-    return { id, title, order, description, userId };
-  }
 }
 
 module.exports = Task;

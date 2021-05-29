@@ -1,15 +1,6 @@
-const taskRepo = require('../tasks/task.memory.repository');
-// const User = require('./user.model');
+const taskServ = require('../tasks/task.service');
+const User = require('./user.model');
 /** @module User_Memory */
-
-/**
- * User
- * @typedef {Object} User
- * @property {string} id - User ID
- * @property {string} name - User name
- * @property {string} login - User login
- * @property {string} password - User login
- */
 
 /**
  * @typedef reqBody - request body for User
@@ -50,7 +41,7 @@ const postUser = async (user) => {
 const deleteUser = async (id) => {
   const userId = USERS.findIndex((user) => user.id === id);
   USERS.splice(userId, 1);
-  const tasks = await taskRepo.getAllTasks();
+  const tasks = await taskServ.getAllTasks();
   tasks.forEach((tsk) => {
     if (tsk.userId === id) {
       Object.assign(tsk, { userId: null });
