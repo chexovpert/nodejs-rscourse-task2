@@ -1,5 +1,15 @@
 const taskRepo = require('../tasks/task.memory.repository');
-// const User = require('./user.model');
+//const User = require('./user.model');
+/** @module User_Memory */
+
+/**
+ * User
+ * @typedef {Object} User
+ * @property {string} id - User ID
+ * @property {string} name - User name
+ * @property {string} login - User login
+ * @property {string} password - User login
+ */
 
 /**
  * @typedef reqBody - request body for User
@@ -13,9 +23,7 @@ const USERS = [];
  * Gets all users (remove password from response)
  * @returns {Promise<User[]>} - array of Users
  */
-const getAll = async () => 
-   USERS
-;
+const getAll = async () => USERS;
 /**
  * Gets a user by ID e.g. “/users/123” (remove password from response)
  * @param {string} id - User id
@@ -39,33 +47,31 @@ const postUser = async (user) => {
  * @param {string} id - user id
  * @returns {Promise<void>}
  */
-const deleteUser = async(id) => {
+const deleteUser = async (id) => {
   const userId = USERS.findIndex((user) => user.id === id);
-  USERS.splice(userId, 1)
+  USERS.splice(userId, 1);
   const tasks = await taskRepo.getAllTasks();
   tasks.forEach((tsk) => {
     if (tsk.userId === id) {
-      Object.assign(tsk, {userId: null })
+      Object.assign(tsk, { userId: null });
       // tsk.userId = null
     }
-    
-  })
-  
-}
+  });
+};
 /**
  * Updates a user by ID
- * @param {string} id 
- * @param {reqBody} reqBody 
+ * @param {string} id
+ * @param {reqBody} reqBody
  * @returns {Promise<User>}
  */
 const updateUser = async (id, reqBody) => {
-  const {name, login, password} = reqBody
-  const user = await getUserById(id)
+  const { name, login, password } = reqBody;
+  const user = await getUserById(id);
   user.name = name;
   user.login = login;
-  user.password = password
+  user.password = password;
   // userById = {...reqBody}
   return user;
-}
+};
 
 module.exports = { getAll, postUser, getUserById, deleteUser, updateUser };

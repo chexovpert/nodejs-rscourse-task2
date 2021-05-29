@@ -1,17 +1,18 @@
 {
-    "source": {
-      "include": ["src"],
-      "includePattern": ".js$",
-      "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": ["plugins/markdown"],
-    "templates": {
-      "cleverLinks": true,
-      "monospaceLinks": true
-    },
-    "opts": {
-      "recurse": true,
-      "destination": "./docs/",
-      "readme": "./readme.md"
-    }
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "template": "./node_modules/minami",
+    "recurse": true,
+    "destination": "./docs/",
+    "readme": "./readme.md"
   }
+}
