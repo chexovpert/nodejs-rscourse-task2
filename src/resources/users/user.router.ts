@@ -26,7 +26,7 @@ router.route('/:id').get(async (req: Request, res: Response) : Promise<void> => 
   }
 });
 
-router.route('/:id').put(async (req, res) : Promise<void> => {
+router.route('/:id').put(async (req: Request, res: Response) : Promise<void> => {
   const {id} = req.params;
   const reqBody = req.body
   const user = await updateUserService(id, reqBody)
@@ -37,7 +37,7 @@ router.route('/:id').put(async (req, res) : Promise<void> => {
   }
 })
 
-router.route('/:id').delete(async (req, res) : Promise<void> => {
+router.route('/:id').delete(async (req: Request, res: Response) : Promise<void> => {
   const {id} = req.params;
   await deleteUserService(id);
   res.status(204).send('User has been deleted')

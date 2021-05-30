@@ -15,7 +15,7 @@ const postUser = async (user: User) : Promise<User> => {
   return user;
 };
 
-const deleteUser = async (id: string) : Promise<void> => {
+const deleteUser = async (id: string| undefined) : Promise<void> => {
   const userId = USERS.findIndex((user) => user.id === id);
   USERS.splice(userId, 1);
   const tasks = await getAllTasksService();
@@ -25,12 +25,12 @@ const deleteUser = async (id: string) : Promise<void> => {
     if (tsk.userId === id) {
       //Object.assign(tsk, { userId: null });
       tsk.userId = null
-      console.log("deleted smhow");
+      //console.log("deleted smhow");
     }
   });
 };
 
-const updateUser = async (id: string, reqBody: IReqUser) : Promise<User| undefined>  => {
+const updateUser = async (id: string| undefined, reqBody: IReqUser) : Promise<User| undefined>  => {
   const { name, login, password } = reqBody;
   const user = await getUserById(id);
   if (user) {

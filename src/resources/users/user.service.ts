@@ -14,9 +14,9 @@ const postUserService = (user: User): Promise<User> => postUser(user);
  * @param {string} id
  * @returns {Promise<void>}
  */
-const deleteUserService = (id: string): Promise<void> => deleteUser(id);
+const deleteUserService = (id: string| undefined): Promise<void> => deleteUser(id);
 
 
-const updateUserService = (id: string, reqBody: IReqUser) => updateUser(id, reqBody);
+const updateUserService = (id: string | undefined, reqBody: IReqUser) => updateUser(id, reqBody);
 
 export { getAllService, postUserService, getUserByIdService, updateUserService, deleteUserService };
