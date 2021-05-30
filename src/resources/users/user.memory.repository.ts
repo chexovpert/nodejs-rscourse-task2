@@ -19,10 +19,13 @@ const deleteUser = async (id: string) : Promise<void> => {
   const userId = USERS.findIndex((user) => user.id === id);
   USERS.splice(userId, 1);
   const tasks = await getAllTasksService();
+  //console.log(tasks);
+  
   tasks.forEach((tsk) => {
     if (tsk.userId === id) {
-      Object.assign(tsk, { userId: null });
-      //tsk.userId = null
+      //Object.assign(tsk, { userId: null });
+      tsk.userId = null
+      console.log("deleted smhow");
     }
   });
 };

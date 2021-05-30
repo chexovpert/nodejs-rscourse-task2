@@ -10,7 +10,13 @@ import Column from '../columns/column.module';
  * Class to create a board
  * @constructor
  */
-class Board {
+
+ interface IReqBoard  {
+  id?: string,
+  title: string,
+  columns: Column[]
+}
+class Board implements IReqBoard {
   id: string;
   title: string;
   columns: Column[]
@@ -27,10 +33,10 @@ class Board {
    * @param {Board} board
    * @returns {resBody}
    */
-  static toResponse(board: Board) {
+  static toResponse(board: Board) : Board {
     const { id, title, columns } = board;
     return { id, title, columns };
   }
 }
 
-module.exports = Board;
+export {Board, IReqBoard};

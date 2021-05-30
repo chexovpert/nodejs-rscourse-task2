@@ -1,29 +1,40 @@
 import { v4 as uuid } from 'uuid';
+
 interface IReqTask  {
+  id?: string,
   title: string,
   order: number,
   description: string,
-  userId: string,
+  userId: string | null,
   columnId: string,
-  boardId: string,
+  boardId: string | undefined,
 }
-class Task {
+interface ITask  {
+  id?: string,
+  title: string,
+  order: number,
+  description: string,
+  userId: string | null,
+  columnId: string,
+  boardId: string | undefined,
+}
+class Task implements IReqTask {
     id: string;
     title: string;
     order: number;
     description: string;
     userId: string | null;
     columnId: string;
-    boardId: string;
+    boardId: string | undefined;
   constructor({
     id = uuid(),
     title = 'task',
     order = 0,
     description = 'task descr',
-    userId = "",
-    columnId = "",
-    boardId = "undefined",
-  } = {}) {
+    userId = null,
+    columnId = "1",
+    boardId = "",
+  } = {} as IReqTask) {
     this.id = id;
     this.title = title;
     this.order = order;
@@ -35,4 +46,4 @@ class Task {
 
 }
 
-export  {Task, IReqTask};
+export  {Task, IReqTask, ITask};

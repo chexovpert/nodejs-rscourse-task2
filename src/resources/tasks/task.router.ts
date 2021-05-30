@@ -11,10 +11,15 @@ router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promis
 
 router.route('/:boardId/tasks').post(async (req: Request, res: Response) : Promise<void> => {
   const reqBody: IReqTask = {...req.body}
-  const {boardId} = req.params
-  const task = new Task({...reqBody, boardId});
-  const post = await postTaskService(task)
-  res.status(201).json(post)
+  const boardId : string | undefined = req.params["boardId"]
+  if (boardId !== undefined) {
+    const task = new Task({...reqBody, boardId});
+    
+    const post = await postTaskService(task)
+    res.status(201).json(post)
+  } else {
+    res.status(404).send('not found')
+  }
 })
 
 
