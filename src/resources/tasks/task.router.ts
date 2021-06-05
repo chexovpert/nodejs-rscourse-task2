@@ -2,7 +2,7 @@ import {Router, Request, Response} from "express"
 import { IReqTask, Task } from "./task.model";
 import { getAllTaskByBoardIdService, postTaskService, getTaskByBoardIdAndTaskIdService, updateTaskByBoardIdAndTaskIdService, deleteTaskService } from './task.service';
 
-const router = Router();
+const router = Router({ mergeParams: true });
 router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promise<void> => {
   const { boardId } = req.params;
   const tasks = await getAllTaskByBoardIdService(boardId);

@@ -5,8 +5,9 @@ import {getAllService,  postUserService, getUserByIdService, updateUserService, 
 const router = Router();
 router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
   const users = await getAllService();
+  //throw Error('oops')
   res.status(200).json(users.map(User.toResponse));
-
+  
 });
 router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
   const reqBody: IReqUser = {...req.body}

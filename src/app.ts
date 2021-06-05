@@ -5,9 +5,11 @@ import * as YAML from 'yamljs';
 import userRouter from './resources/users/user.router';
 import taskRouter from './resources/tasks/task.router';
 import boardRouter from './resources/boards/board.router';
+import * as middleware from './middleware/middleware';
 
 const app = express();
 const swaggerDocument = YAML.load(path.join(__dirname, '../doc/api.yaml'));
+
 
 app.use(express.json());
 
@@ -21,8 +23,12 @@ app.use('/', (req, res, next) => {
   next();
 });
 
+app.use(middleware.requestHandler);
+
+
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
-app.use('/boards', taskRouter);
+boardRouter.use('/', taskRouter);
+app.use(middleware.errorHandler);
 
 export default app;
