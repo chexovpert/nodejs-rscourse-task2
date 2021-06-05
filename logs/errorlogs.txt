@@ -1,0 +1,32 @@
+
+Method: GET 
+Url: /users/122345 
+Error Status Code:404 
+Error message:not found 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/b350f2d2-cdaa- 
+Error Status Code:404 
+Error message:not found 
+Time:[1ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/b350f2d2-cdaa- 
+Error Status Code:404 
+Error message:not found 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/b350f2d2-cdaa- 
+Error Status Code:404 
+Error message:not found 
+Time:[0ms]
+Params:{}
+Body:{}

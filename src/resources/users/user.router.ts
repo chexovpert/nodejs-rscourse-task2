@@ -1,4 +1,4 @@
-import {Router, Request, Response} from "express"
+import {Router, Request, Response, NextFunction} from "express"
 import {User, IReqUser} from './user.module';
 import {getAllService,  postUserService, getUserByIdService, updateUserService, deleteUserService } from './user.service';
 
@@ -17,13 +17,14 @@ router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
   res.status(201).json(User.toResponse(post));
 });
 
-router.route('/:id').get(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:id').get(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const { id } = req.params;
   const user = await getUserByIdService(id);
   if (user !== undefined) {
     res.json(User.toResponse(user));
   } else {
-    res.status(404).send('User not found')
+    next({message: "not found", status: 404})
+    //res.status(404).send('User not found')
   }
 });
 

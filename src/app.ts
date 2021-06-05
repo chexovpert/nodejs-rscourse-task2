@@ -29,6 +29,7 @@ app.use(middleware.requestHandler);
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/', taskRouter);
+
 app.use(middleware.errorHandler);
 
 export default app;

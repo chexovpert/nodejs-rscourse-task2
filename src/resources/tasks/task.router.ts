@@ -1,4 +1,4 @@
-import {Router, Request, Response} from "express"
+import {Router, Request, Response, NextFunction} from "express"
 import { IReqTask, Task } from "./task.model";
 import { getAllTaskByBoardIdService, postTaskService, getTaskByBoardIdAndTaskIdService, updateTaskByBoardIdAndTaskIdService, deleteTaskService } from './task.service';
 
@@ -9,7 +9,7 @@ router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promis
   res.json(tasks);
 });
 
-router.route('/:boardId/tasks').post(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const reqBody: IReqTask = {...req.body}
   const boardId : string | undefined = req.params["boardId"]
   if (boardId !== undefined) {
@@ -18,7 +18,8 @@ router.route('/:boardId/tasks').post(async (req: Request, res: Response) : Promi
     const post = await postTaskService(task)
     res.status(201).json(post)
   } else {
-    res.status(404).send('not found')
+    next({message: "not found", status: 404})
+    //res.status(404).send('not found')
   }
 })
 
