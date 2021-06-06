@@ -1,7 +1,7 @@
 import {Router, Request, Response, NextFunction} from "express"
 import {User, IReqUser} from './user.module';
 import {getAllService,  postUserService, getUserByIdService, updateUserService, deleteUserService } from './user.service';
-
+import {RestError} from '../../middleware/middleware'
 const router = Router();
 router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
   const users = await getAllService();
@@ -23,19 +23,23 @@ router.route('/:id').get(async (req: Request, res: Response, next: NextFunction)
   if (user !== undefined) {
     res.json(User.toResponse(user));
   } else {
-    next({message: "not found", status: 404})
+    //throw new Error('smthing');
+    next(RestError.badRequest('User not found'))
+    //next(Error('smthing'))
     //res.status(404).send('User not found')
   }
 });
 
-router.route('/:id').put(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:id').put(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const {id} = req.params;
   const reqBody = req.body
   const user = await updateUserService(id, reqBody)
   if (user !== undefined) {
     res.json(User.toResponse(user))
   } else {
-    res.status(404).send('User not found')
+    next(RestError.badRequest('User not found'))
+    //next(Error('smthing'))
+    //res.status(404).send('User not found')
   }
 })
 

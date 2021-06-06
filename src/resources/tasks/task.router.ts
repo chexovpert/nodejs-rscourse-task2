@@ -1,6 +1,7 @@
 import {Router, Request, Response, NextFunction} from "express"
 import { IReqTask, Task } from "./task.model";
 import { getAllTaskByBoardIdService, postTaskService, getTaskByBoardIdAndTaskIdService, updateTaskByBoardIdAndTaskIdService, deleteTaskService } from './task.service';
+import {RestError} from '../../middleware/middleware'
 
 const router = Router({ mergeParams: true });
 router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promise<void> => {
@@ -18,19 +19,20 @@ router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: N
     const post = await postTaskService(task)
     res.status(201).json(post)
   } else {
-    next({message: "not found", status: 404})
+    next(RestError.badRequest('board not found'))
     //res.status(404).send('not found')
   }
 })
 
 
 
-router.route('/:boardId/tasks/:taskId').get(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:boardId/tasks/:taskId').get(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const {boardId, taskId} = req.params;
   
   const task = await getTaskByBoardIdAndTaskIdService(boardId, taskId);
   if (task === undefined) {
-    res.status(404).send('not found')
+    next(RestError.badRequest('board not found'))
+    //res.status(404).send('not found')
   } else {
     res.status(200).json((task))
   

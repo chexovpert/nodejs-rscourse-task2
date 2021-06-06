@@ -1,6 +1,7 @@
-import {Router, Request, Response} from "express";
+import {Router, Request, Response, NextFunction} from "express";
 import {Board} from './board.model';
 import boardsService from'./board.service';
+import {RestError} from '../../middleware/middleware'
 
 const router = Router();
 router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
@@ -14,18 +15,19 @@ router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
   res.status(201).json(Board.toResponse(post));
 });
 
-router.route('/:id').get(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:id').get(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const { id } = req.params;
   const boardById = await boardsService.getBoardByIdService(id);
   if (boardById === undefined) {
-    res.status(404).send('not found')
+    next(RestError.badRequest('board not found'));
+    //res.status(404).send('not found')
   } else {
     res.status(200).json((boardById))
   
   }
 });
 
-router.route('/:id').put(async (req: Request, res: Response) : Promise<void> => {
+router.route('/:id').put(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
   const { id } = req.params;
   const reqBody = req.body;
   const board = await boardsService.updateBoardService(id, reqBody);
@@ -33,7 +35,8 @@ router.route('/:id').put(async (req: Request, res: Response) : Promise<void> => 
     res.json(Board.toResponse(board));
   }
   else {
-    res.status(404).send('not found')
+    next(RestError.badRequest('board not found'));
+    //res.status(404).send('not found')
   }
 });
 

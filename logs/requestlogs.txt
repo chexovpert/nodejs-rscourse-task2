@@ -1,42 +1,84 @@
 
 Method: GET 
-Url: /users/122345 
+Url: /favicon.ico 
 Status Code:404 
-Time:[10ms]
-Params:{}
+Time:[3ms]
+Params:undefined
 Body:{}
 
-Method: POST 
-Url: /users 
-Status Code:201 
+Method: GET 
+Url: /users/121 
+Status Code:500 
 Time:[2ms]
 Params:{}
-Body:{"name":"string","login":"string","password":"string"}
-
-Method: GET 
-Url: /users/b350f2d2-cdaa-4b87-af5f-653e708c812a 
-Status Code:200 
-Time:[1ms]
-Params:{"id":"b350f2d2-cdaa-4b87-af5f-653e708c812a"}
 Body:{}
 
 Method: GET 
-Url: /users/b350f2d2-cdaa- 
-Status Code:404 
-Time:[1ms]
+Url: /users/121 
+Status Code:500 
+Time:[20ms]
 Params:{}
 Body:{}
 
 Method: GET 
-Url: /users/b350f2d2-cdaa- 
+Url: /users/121 
+Status Code:500 
+Time:[2ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
 Status Code:404 
 Time:[8ms]
 Params:{}
 Body:{}
 
 Method: GET 
-Url: /users/b350f2d2-cdaa- 
-Status Code:404 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
 Time:[1ms]
 Params:{}
 Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:404 
+Time:[1ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:404 
+Time:[1ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:500 
+Time:[5ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}

@@ -24,12 +24,16 @@ app.use('/', (req, res, next) => {
 });
 
 app.use(middleware.requestHandler);
-
-
+process.on('uncaughtExceptionMonitor', middleware.uncaughtExceptionHandler);
+//process.on('uncaughtException', middleware.uncaughtExceptionHandler);
+//throw Error('Oops!');
+process.on('unhandledRejection', middleware.unhandledRejectionHandler);
+//Promise.reject(Error('Oops!'));
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
 boardRouter.use('/', taskRouter);
 
-app.use(middleware.errorHandler);
+app.use(middleware.restErrorHandler);
+app.use(middleware.internalErrorHandler);
 
 export default app;
