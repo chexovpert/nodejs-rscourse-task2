@@ -1,0 +1,84 @@
+
+Method: GET 
+Url: /favicon.ico 
+Status Code:404 
+Time:[3ms]
+Params:undefined
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[2ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[20ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[2ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:404 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[1ms]
+Params:{}
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:404 
+Time:[1ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:404 
+Time:[1ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /users/121 
+Status Code:500 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Status Code:500 
+Time:[5ms]
+Params:{}
+Body:{"name":"string","login":"string","password":"string"}

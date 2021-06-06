@@ -1,0 +1,93 @@
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:404 
+Error message:User not found 
+Time:[20ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:[object Object] 
+Time:[16ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:404 
+Error message:User not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:[object Object] 
+Time:[2ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:404 
+Error message:User not found 
+Time:[6ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[7ms]
+Body:{}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[1ms]
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Error Status Code:404 
+Error message:User not found 
+Time:[1ms]
+Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[7ms]
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Error Status Code:404 
+Error message:User not found 
+Time:[1ms]
+Body:{"name":"string","login":"string","password":"string"}
+
+Unhandled Rejection at:[object Promise]reason: Error: smthing
+
+Method: GET 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[10ms]
+Body:{}
+
+Method: PUT 
+Url: /users/121 
+Error Status Code:500 
+Error:Error: smthing 
+Time:[6ms]
+Body:{"name":"string","login":"string","password":"string"}
