@@ -91,3 +91,52 @@ Error Status Code:500
 Error:Error: smthing 
 Time:[6ms]
 Body:{"name":"string","login":"string","password":"string"}
+
+Method: GET 
+Url: /boards/7bf7657c-dfbe-4cc9-ab36-6b9a3f1d0262 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5dca6559-9769-4ef6-979b-ba246960daf8/tasks/36bfa90e-a499-4477-a8d7-4be270a0b3cc 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5dca6559-9769-4ef6-979b-ba246960daf8/tasks/df44d037-45ba-49ad-a1f7-cc45f044884a 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5dca6559-9769-4ef6-979b-ba246960daf8/tasks/4ceb118f-58ce-4685-89bf-50c8c1a4643f 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5dca6559-9769-4ef6-979b-ba246960daf8/tasks/67fe24f9-186c-42b4-a359-e5d72425b4c7 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5dca6559-9769-4ef6-979b-ba246960daf8/tasks/889ba6b0-fbc4-4956-b896-783c0763f89b 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/1d12b09e-f214-466e-a83b-087963b43fd4/tasks/cfc11142-c415-47ed-8ad1-eb5773063737 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
