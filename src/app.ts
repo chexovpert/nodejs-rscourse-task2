@@ -31,6 +31,7 @@ process.on('unhandledRejection', middleware.unhandledRejectionHandler);
 //Promise.reject(Error('Oops!'));
 app.use('/users', userRouter);
 app.use('/boards', boardRouter);
+app.use('/exit', () => {new Error('error'); process.exit(1)})
 boardRouter.use('/', taskRouter);
 
 app.use(middleware.restErrorHandler);

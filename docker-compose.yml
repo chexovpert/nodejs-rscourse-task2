@@ -1,17 +1,40 @@
 version: '3.0'
 
 services: 
-    main:
-        container_name: main
-        build: 
-            context: .
-        env_file: 
-            - .env
-        volumes: 
-            - .:/app
-            - /app/node_modules
+    node:
+        build: .
         ports: 
             - ${PORT}:${PORT}
         depends_on: 
             - postgres
+        env_file: 
+            - .env
+        environment: 
+            - PORT=${PORT}
+        volumes: 
+            - ./logs:/app/logs
+            - ./src:/app/src
+            - .:/app
+        networks: 
+            - net
         restart: always
+    postgres:
+        build: ./database/
+        ports: 
+            - ${POSTGRES_PORT}:${POSTGRES_PORT}
+        environment:
+            PG_DATA: /var/lib/postresql/data 
+            POSTGRES_USER: ${POSTGRES_USER}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+            POSTGRES_DB: ${POSTGRES_DB}
+        volumes: 
+            - pgdata:/var/lib/postresql/data
+        networks: 
+            - net
+        restart: always
+
+volumes: 
+    pgdata:
+networks: 
+    net: 
+        driver: bridge
