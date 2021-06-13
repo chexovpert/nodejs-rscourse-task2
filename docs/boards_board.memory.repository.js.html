@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>boards/board.memory.repository.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Board.html">Board</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Board.html#.toResponse">toResponse</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Column.html">Column</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Task.html">Task</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="User.html">User</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="User.html#.toResponse">toResponse</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Board_Memory.html">Board_Memory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Memory.html#~deleteBoard">deleteBoard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Memory.html#~getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Memory.html#~getBoardById">getBoardById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Memory.html#~postBoard">postBoard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Memory.html#~updateBoard">updateBoard</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Board_Service.html">Board_Service</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Service.html#~deleteBoard">deleteBoard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Service.html#~getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Service.html#~getBoardById">getBoardById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Service.html#~postBoard">postBoard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Board_Service.html#~updateBoard">updateBoard</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Task_Memory.html">Task_Memory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~deleteTask">deleteTask</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~getAllTaskByBoardId">getAllTaskByBoardId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~getAllTasks">getAllTasks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~getTaskByBoardIdAndTaskId">getTaskByBoardIdAndTaskId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~postTask">postTask</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Memory.html#~updateTaskByBoardIdAndTaskId">updateTaskByBoardIdAndTaskId</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Task_Service.html">Task_Service</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~deleteTask">deleteTask</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~getAllTaskByBoardId">getAllTaskByBoardId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~getAllTasks">getAllTasks</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~getTaskByBoardIdAndTaskId">getTaskByBoardIdAndTaskId</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~postTask">postTask</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Task_Service.html#~updateTaskByBoardIdAndTaskId">updateTaskByBoardIdAndTaskId</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-User_Memory.html">User_Memory</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Memory.html#~deleteUser">deleteUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Memory.html#~getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Memory.html#~getUserById">getUserById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Memory.html#~postUser">postUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Memory.html#~updateUser">updateUser</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-User_Service.html">User_Service</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Service.html#~deleteUser">deleteUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Service.html#~getAll">getAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Service.html#~getUserById">getUserById</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Service.html#~postUser">postUser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-User_Service.html#~updateUser">updateUser</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">boards/board.memory.repository.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const taskServ = require('../tasks/task.service');
+const Board = require('./board.model');
+const Column = require('../columns/column.model');
+/** @module Board_Memory */
+
+/**
+ * @typedef reqBody
+ * @property {string} title board title
+ * @property {Column[]} columns board title
+ */
+const BOARDS = [];
+/**
+ * Returns all boards from in-memory DB
+ * @returns {Promise&lt;Board[]>}
+ */
+const getAll = async () => BOARDS;
+/**
+ * Creates a new board
+ * @param {Board} board
+ * @returns {Promise&lt;Board>}
+ */
+const postBoard = async (board) => {
+  BOARDS.push(board);
+  return board;
+};
+/**
+ * Return board by id
+ * @param {string} id
+ * @returns {Promise&lt;Board>}
+ */
+const getBoardById = async (id) => {
+  const boardById = BOARDS.find((board) => board.id === id);
+  return boardById;
+};
+/**
+ * Updates board by id
+ * @param {string} id board id
+ * @param {reqBody} reqBody updated params
+ * @returns {Promise&lt;Board>} updated board
+ */
+const updateBoard = async (id, reqBody) => {
+  const board = await getBoardById(id);
+  const { title, columns } = reqBody;
+  board.title = title;
+  board.columns = columns;
+  return board;
+};
+/**
+ * Deletes board by id
+ * @param {string} id board id
+ * @returns {Promise&lt;void>}
+ */
+const deleteBoard = async (id) => {
+  const tasks = await taskServ.getAllTaskByBoardId(id);
+  Promise.all(
+    tasks.map(async (task) => {
+      await taskServ.deleteTask(task.boardId, task.id);
+    })
+  );
+  const idNum = BOARDS.findIndex((board) => board.id === id);
+  BOARDS.splice(idNum, 1);
+};
+
+module.exports = { getAll, postBoard, getBoardById, deleteBoard, updateBoard };
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.7</a> on Sat May 29 2021 15:59:16 GMT+0300 (Москва, стандартное время) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
