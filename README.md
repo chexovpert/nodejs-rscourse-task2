@@ -8,7 +8,7 @@ npm i
 ```
 2.Launch docker
 ```
-docker compose up
+docker-compose up
 ```
 ## Prerequisites
 
