@@ -2,8 +2,8 @@ import type { RequestHandler, ErrorRequestHandler } from "express";
 import {finished} from "stream"
 import {appendFile, appendFileSync} from "fs"
 
-const requestLogsPath: string = './logs/requestlogs.txt'
-const errorLogsPath: string = './logs/errorlogs.txt'
+const requestLogsPath = './logs/requestlogs.txt'
+const errorLogsPath = './logs/errorlogs.txt'
 class RestError {
     code: number;
     message: string;
