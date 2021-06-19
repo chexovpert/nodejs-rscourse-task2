@@ -540,3 +540,54 @@ Error Status Code:404
 Error message:board not found 
 Time:[2ms]
 Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(25)
+
+Method: GET 
+Url: /boards/7dd72612-bd42-4fca-9f92-79be11cb46d5 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/39fcf3ea-142a-4139-b216-a3aaee980730/tasks/07a52379-b48f-4fc1-8849-f8770f6be4c7 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/39fcf3ea-142a-4139-b216-a3aaee980730/tasks/071a69b9-1e15-4861-b7c1-1a91880eda99 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/39fcf3ea-142a-4139-b216-a3aaee980730/tasks/34561287-f79e-413d-9238-d07c8d289751 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/39fcf3ea-142a-4139-b216-a3aaee980730/tasks/6ac28cfe-72e1-40d3-a3ee-3ef232458ed2 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/39fcf3ea-142a-4139-b216-a3aaee980730/tasks/98e2909c-083e-4ab6-a782-aad7cc015943 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d69dd831-107f-4946-9c98-affa9dc17bf0/tasks/71209edd-6348-417c-bb38-d2a7254e68d7 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
