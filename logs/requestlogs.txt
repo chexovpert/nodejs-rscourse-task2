@@ -24162,3 +24162,1879 @@ Status Code:200
 Time:[23ms]
 Params:{"id":"7f313d96-94e7-459c-884f-d177cae3cd04"}
 Body:{}
+
+Method: GET 
+Url: /users 
+Status Code:200 
+Time:[280ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[53ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: GET 
+Url: /users/3a0bba13-f215-417c-bf5f-9e79855eb8d2 
+Status Code:200 
+Time:[5ms]
+Params:{"id":"3a0bba13-f215-417c-bf5f-9e79855eb8d2"}
+Body:{}
+
+Method: DELETE 
+Url: /users/3a0bba13-f215-417c-bf5f-9e79855eb8d2 
+Status Code:204 
+Time:[41ms]
+Params:{"id":"3a0bba13-f215-417c-bf5f-9e79855eb8d2"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/3705c165-0cae-4fa1-87d9-628b7d108759 
+Status Code:204 
+Time:[18ms]
+Params:{"id":"3705c165-0cae-4fa1-87d9-628b7d108759"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[23ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/e3a551c7-caf3-4490-a0e4-706c69696c08 
+Status Code:200 
+Time:[12ms]
+Params:{"id":"e3a551c7-caf3-4490-a0e4-706c69696c08"}
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"e3a551c7-caf3-4490-a0e4-706c69696c08"}
+
+Method: GET 
+Url: /users/e3a551c7-caf3-4490-a0e4-706c69696c08 
+Status Code:200 
+Time:[7ms]
+Params:{"id":"e3a551c7-caf3-4490-a0e4-706c69696c08"}
+Body:{}
+
+Method: DELETE 
+Url: /users/e3a551c7-caf3-4490-a0e4-706c69696c08 
+Status Code:204 
+Time:[17ms]
+Params:{"id":"e3a551c7-caf3-4490-a0e4-706c69696c08"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/ec7d8e3e-b1e0-46c3-8300-ee8a8753b0da 
+Status Code:204 
+Time:[17ms]
+Params:{"id":"ec7d8e3e-b1e0-46c3-8300-ee8a8753b0da"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[20ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[26ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks 
+Status Code:201 
+Time:[31ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"9b9876a5-83c1-453d-b26a-70ce52f937f5","boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910"}
+
+Method: POST 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks 
+Status Code:201 
+Time:[125ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"9b9876a5-83c1-453d-b26a-70ce52f937f5","boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910"}
+
+Method: DELETE 
+Url: /users/9b9876a5-83c1-453d-b26a-70ce52f937f5 
+Status Code:204 
+Time:[20ms]
+Params:{"id":"9b9876a5-83c1-453d-b26a-70ce52f937f5"}
+Body:{}
+
+Method: GET 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks/d8b0c668-7421-435f-a2b2-fdb56bbdf8d9 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910","taskId":"d8b0c668-7421-435f-a2b2-fdb56bbdf8d9"}
+Body:{}
+
+Method: GET 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks/21120074-2ea7-4f53-af5b-9809bda290b9 
+Status Code:200 
+Time:[13ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910","taskId":"21120074-2ea7-4f53-af5b-9809bda290b9"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks/21120074-2ea7-4f53-af5b-9809bda290b9 
+Status Code:204 
+Time:[24ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910","taskId":"21120074-2ea7-4f53-af5b-9809bda290b9"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910/tasks/d8b0c668-7421-435f-a2b2-fdb56bbdf8d9 
+Status Code:204 
+Time:[30ms]
+Params:{"boardId":"2484d858-e649-45ec-bd14-6b2acb0b6910","taskId":"d8b0c668-7421-435f-a2b2-fdb56bbdf8d9"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/2484d858-e649-45ec-bd14-6b2acb0b6910 
+Status Code:200 
+Time:[22ms]
+Params:{"id":"2484d858-e649-45ec-bd14-6b2acb0b6910"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[33ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[12ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[15ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/d5c83d45-6667-45b1-aef1-c042eb3d8638 
+Status Code:200 
+Time:[9ms]
+Params:{"id":"d5c83d45-6667-45b1-aef1-c042eb3d8638"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[39ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/5edc62df-fbac-4010-ae5a-d8c8492d6967 
+Status Code:200 
+Time:[26ms]
+Params:{"id":"5edc62df-fbac-4010-ae5a-d8c8492d6967"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[27ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: PUT 
+Url: /boards/a9cc1a29-bfd8-40e0-935e-778ca4f4a94a 
+Status Code:200 
+Time:[19ms]
+Params:{"id":"a9cc1a29-bfd8-40e0-935e-778ca4f4a94a"}
+Body:{"title":"Autotest updated board","id":"a9cc1a29-bfd8-40e0-935e-778ca4f4a94a","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards/a9cc1a29-bfd8-40e0-935e-778ca4f4a94a 
+Status Code:200 
+Time:[7ms]
+Params:{"id":"a9cc1a29-bfd8-40e0-935e-778ca4f4a94a"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/a9cc1a29-bfd8-40e0-935e-778ca4f4a94a 
+Status Code:200 
+Time:[16ms]
+Params:{"id":"a9cc1a29-bfd8-40e0-935e-778ca4f4a94a"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[17ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/e7aa0d52-2a00-4fbc-88c0-00774dd25ff8 
+Status Code:200 
+Time:[20ms]
+Params:{"id":"e7aa0d52-2a00-4fbc-88c0-00774dd25ff8"}
+Body:{}
+
+Method: GET 
+Url: /boards/e7aa0d52-2a00-4fbc-88c0-00774dd25ff8 
+Status Code:404 
+Time:[7ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks 
+Status Code:201 
+Time:[55ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks 
+Status Code:201 
+Time:[56ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks 
+Status Code:201 
+Time:[170ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks 
+Status Code:201 
+Time:[188ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks 
+Status Code:201 
+Time:[190ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","userId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/8fd58cb6-bd46-464f-b685-dc23c18400c6 
+Status Code:200 
+Time:[12ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","taskId":"8fd58cb6-bd46-464f-b685-dc23c18400c6"}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/3d21635b-650e-4156-9839-8f72c7f89b1f 
+Status Code:200 
+Time:[13ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","taskId":"3d21635b-650e-4156-9839-8f72c7f89b1f"}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/ba7ff859-f849-49b1-b70b-fe032e217921 
+Status Code:200 
+Time:[12ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","taskId":"ba7ff859-f849-49b1-b70b-fe032e217921"}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/9d061af9-3739-4aad-835d-96b9760d0eb8 
+Status Code:200 
+Time:[14ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","taskId":"9d061af9-3739-4aad-835d-96b9760d0eb8"}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/7d1dd689-0c40-4c1b-9fe9-8c79f671998c 
+Status Code:200 
+Time:[17ms]
+Params:{"boardId":"fa5d80b6-ef77-4b28-b2a8-75db005038f0","taskId":"7d1dd689-0c40-4c1b-9fe9-8c79f671998c"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0 
+Status Code:200 
+Time:[49ms]
+Params:{"id":"fa5d80b6-ef77-4b28-b2a8-75db005038f0"}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/3d21635b-650e-4156-9839-8f72c7f89b1f 
+Status Code:404 
+Time:[18ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/8fd58cb6-bd46-464f-b685-dc23c18400c6 
+Status Code:404 
+Time:[21ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/9d061af9-3739-4aad-835d-96b9760d0eb8 
+Status Code:404 
+Time:[21ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/7d1dd689-0c40-4c1b-9fe9-8c79f671998c 
+Status Code:404 
+Time:[19ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/fa5d80b6-ef77-4b28-b2a8-75db005038f0/tasks/ba7ff859-f849-49b1-b70b-fe032e217921 
+Status Code:404 
+Time:[26ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/d5c83d45-6667-45b1-aef1-c042eb3d8638 
+Status Code:200 
+Time:[56ms]
+Params:{"id":"d5c83d45-6667-45b1-aef1-c042eb3d8638"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[34ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks 
+Status Code:201 
+Time:[23ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks 
+Status Code:200 
+Time:[4ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks 
+Status Code:200 
+Time:[11ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/247c8e15-08f0-4e60-826a-300e244607d4 
+Status Code:200 
+Time:[17ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"247c8e15-08f0-4e60-826a-300e244607d4"}
+Body:{}
+
+Method: POST 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks 
+Status Code:201 
+Time:[39ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: DELETE 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/eabc0a56-4027-48cf-839e-91aa0753f766 
+Status Code:204 
+Time:[30ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"eabc0a56-4027-48cf-839e-91aa0753f766"}
+Body:{}
+
+Method: POST 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks 
+Status Code:201 
+Time:[28ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/eca55590-5036-49f3-aef9-7aa2aa88193f 
+Status Code:200 
+Time:[18ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"eca55590-5036-49f3-aef9-7aa2aa88193f"}
+Body:{"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"eca55590-5036-49f3-aef9-7aa2aa88193f","userId":null,"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/eca55590-5036-49f3-aef9-7aa2aa88193f 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"eca55590-5036-49f3-aef9-7aa2aa88193f"}
+Body:{}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/247c8e15-08f0-4e60-826a-300e244607d4 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"247c8e15-08f0-4e60-826a-300e244607d4"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/247c8e15-08f0-4e60-826a-300e244607d4 
+Status Code:204 
+Time:[17ms]
+Params:{"boardId":"0f8d96d6-57d5-4daf-8da6-42cd3f910847","taskId":"247c8e15-08f0-4e60-826a-300e244607d4"}
+Body:{}
+
+Method: GET 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847/tasks/247c8e15-08f0-4e60-826a-300e244607d4 
+Status Code:404 
+Time:[12ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/0f8d96d6-57d5-4daf-8da6-42cd3f910847 
+Status Code:200 
+Time:[43ms]
+Params:{"id":"0f8d96d6-57d5-4daf-8da6-42cd3f910847"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[196ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[9ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[11ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/c64b0433-a129-47b3-a257-863429be84c5 
+Status Code:200 
+Time:[10ms]
+Params:{"id":"c64b0433-a129-47b3-a257-863429be84c5"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/1b4795fb-70ef-4218-afe7-b100b53b0606 
+Status Code:200 
+Time:[47ms]
+Params:{"id":"1b4795fb-70ef-4218-afe7-b100b53b0606"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[41ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: PUT 
+Url: /boards/8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287 
+Status Code:200 
+Time:[48ms]
+Params:{"id":"8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287"}
+Body:{"title":"Autotest updated board","id":"8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards/8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287 
+Status Code:200 
+Time:[8ms]
+Params:{"id":"8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287 
+Status Code:200 
+Time:[30ms]
+Params:{"id":"8cd06fbf-2c5f-40c4-bbf6-ee7d0df33287"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[29ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/0bf6aba5-0de7-42df-a00e-67a69882046a 
+Status Code:200 
+Time:[21ms]
+Params:{"id":"0bf6aba5-0de7-42df-a00e-67a69882046a"}
+Body:{}
+
+Method: GET 
+Url: /boards/0bf6aba5-0de7-42df-a00e-67a69882046a 
+Status Code:404 
+Time:[10ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[37ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks 
+Status Code:201 
+Time:[73ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks 
+Status Code:201 
+Time:[162ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks 
+Status Code:201 
+Time:[186ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks 
+Status Code:201 
+Time:[200ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks 
+Status Code:201 
+Time:[203ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","userId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/375e75a8-c9bf-42e1-a613-ee22ca8d6290 
+Status Code:200 
+Time:[15ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","taskId":"375e75a8-c9bf-42e1-a613-ee22ca8d6290"}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/5869acf7-1f22-4d56-a0aa-2dc66883a0b8 
+Status Code:200 
+Time:[16ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","taskId":"5869acf7-1f22-4d56-a0aa-2dc66883a0b8"}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/9df1d926-4101-497f-9583-80952dda395d 
+Status Code:200 
+Time:[17ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","taskId":"9df1d926-4101-497f-9583-80952dda395d"}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/f1a3004a-6501-4cc1-8989-8a1d2793878d 
+Status Code:200 
+Time:[17ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","taskId":"f1a3004a-6501-4cc1-8989-8a1d2793878d"}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/b57b0ad8-d072-428a-9c28-03fb089ba67b 
+Status Code:200 
+Time:[19ms]
+Params:{"boardId":"c6603e62-8afe-4e98-bf48-1d5014acb17a","taskId":"b57b0ad8-d072-428a-9c28-03fb089ba67b"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a 
+Status Code:200 
+Time:[30ms]
+Params:{"id":"c6603e62-8afe-4e98-bf48-1d5014acb17a"}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/f1a3004a-6501-4cc1-8989-8a1d2793878d 
+Status Code:404 
+Time:[23ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/b57b0ad8-d072-428a-9c28-03fb089ba67b 
+Status Code:404 
+Time:[18ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/375e75a8-c9bf-42e1-a613-ee22ca8d6290 
+Status Code:404 
+Time:[27ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/9df1d926-4101-497f-9583-80952dda395d 
+Status Code:404 
+Time:[24ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/c6603e62-8afe-4e98-bf48-1d5014acb17a/tasks/5869acf7-1f22-4d56-a0aa-2dc66883a0b8 
+Status Code:404 
+Time:[23ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/c64b0433-a129-47b3-a257-863429be84c5 
+Status Code:200 
+Time:[68ms]
+Params:{"id":"c64b0433-a129-47b3-a257-863429be84c5"}
+Body:{}
+
+Method: GET 
+Url: /users 
+Status Code:200 
+Time:[7ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[39ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: GET 
+Url: /users/e92bc654-8a75-4221-b2a8-54848c2c25cc 
+Status Code:200 
+Time:[8ms]
+Params:{"id":"e92bc654-8a75-4221-b2a8-54848c2c25cc"}
+Body:{}
+
+Method: DELETE 
+Url: /users/e92bc654-8a75-4221-b2a8-54848c2c25cc 
+Status Code:204 
+Time:[33ms]
+Params:{"id":"e92bc654-8a75-4221-b2a8-54848c2c25cc"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[29ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/b99e62c2-4ea8-43da-bb52-df8eefc7e8cd 
+Status Code:204 
+Time:[22ms]
+Params:{"id":"b99e62c2-4ea8-43da-bb52-df8eefc7e8cd"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[29ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/14f81515-e036-4365-9099-dfa5470fe840 
+Status Code:200 
+Time:[23ms]
+Params:{"id":"14f81515-e036-4365-9099-dfa5470fe840"}
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"14f81515-e036-4365-9099-dfa5470fe840"}
+
+Method: GET 
+Url: /users/14f81515-e036-4365-9099-dfa5470fe840 
+Status Code:200 
+Time:[9ms]
+Params:{"id":"14f81515-e036-4365-9099-dfa5470fe840"}
+Body:{}
+
+Method: DELETE 
+Url: /users/14f81515-e036-4365-9099-dfa5470fe840 
+Status Code:204 
+Time:[41ms]
+Params:{"id":"14f81515-e036-4365-9099-dfa5470fe840"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[41ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/95ae55a9-3919-4ccb-ae01-1774fa894ad1 
+Status Code:204 
+Time:[21ms]
+Params:{"id":"95ae55a9-3919-4ccb-ae01-1774fa894ad1"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[21ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[28ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks 
+Status Code:201 
+Time:[24ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"4fab86b8-641e-4216-a3bf-45dc40b4b129","boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f"}
+
+Method: POST 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks 
+Status Code:201 
+Time:[37ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"4fab86b8-641e-4216-a3bf-45dc40b4b129","boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f"}
+
+Method: DELETE 
+Url: /users/4fab86b8-641e-4216-a3bf-45dc40b4b129 
+Status Code:204 
+Time:[22ms]
+Params:{"id":"4fab86b8-641e-4216-a3bf-45dc40b4b129"}
+Body:{}
+
+Method: GET 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks/7a822538-73db-466a-8501-f68810999adc 
+Status Code:200 
+Time:[8ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f","taskId":"7a822538-73db-466a-8501-f68810999adc"}
+Body:{}
+
+Method: GET 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks/52442996-1d2e-40ef-b3da-d8546389fb16 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f","taskId":"52442996-1d2e-40ef-b3da-d8546389fb16"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks/7a822538-73db-466a-8501-f68810999adc 
+Status Code:204 
+Time:[15ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f","taskId":"7a822538-73db-466a-8501-f68810999adc"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f/tasks/52442996-1d2e-40ef-b3da-d8546389fb16 
+Status Code:204 
+Time:[16ms]
+Params:{"boardId":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f","taskId":"52442996-1d2e-40ef-b3da-d8546389fb16"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f 
+Status Code:200 
+Time:[21ms]
+Params:{"id":"89a8fca8-27aa-4819-a66d-f0a6ee2c4c6f"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[29ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks 
+Status Code:201 
+Time:[26ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks 
+Status Code:200 
+Time:[8ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks 
+Status Code:200 
+Time:[15ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/c0c765bf-8e0d-46de-a6cf-bce7492e50db 
+Status Code:200 
+Time:[12ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"c0c765bf-8e0d-46de-a6cf-bce7492e50db"}
+Body:{}
+
+Method: POST 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks 
+Status Code:201 
+Time:[20ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: DELETE 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/bbb055f3-dc21-44ef-877d-475561fc2523 
+Status Code:204 
+Time:[17ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"bbb055f3-dc21-44ef-877d-475561fc2523"}
+Body:{}
+
+Method: POST 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks 
+Status Code:201 
+Time:[22ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/a1123407-1541-4dee-8265-cd46383533d9 
+Status Code:200 
+Time:[18ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"a1123407-1541-4dee-8265-cd46383533d9"}
+Body:{"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"a1123407-1541-4dee-8265-cd46383533d9","userId":null,"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/a1123407-1541-4dee-8265-cd46383533d9 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"a1123407-1541-4dee-8265-cd46383533d9"}
+Body:{}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/c0c765bf-8e0d-46de-a6cf-bce7492e50db 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"c0c765bf-8e0d-46de-a6cf-bce7492e50db"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/c0c765bf-8e0d-46de-a6cf-bce7492e50db 
+Status Code:204 
+Time:[14ms]
+Params:{"boardId":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a","taskId":"c0c765bf-8e0d-46de-a6cf-bce7492e50db"}
+Body:{}
+
+Method: GET 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a/tasks/c0c765bf-8e0d-46de-a6cf-bce7492e50db 
+Status Code:404 
+Time:[10ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a 
+Status Code:200 
+Time:[75ms]
+Params:{"id":"ddd5c9b0-2b6e-4bcb-8986-00dc6173c28a"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[177ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[9ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[10ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/09a3d59e-cafd-4465-95b6-bc3c656d1cce 
+Status Code:200 
+Time:[14ms]
+Params:{"id":"09a3d59e-cafd-4465-95b6-bc3c656d1cce"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[48ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/98ae72b3-b93d-41aa-868c-2ae461838b75 
+Status Code:200 
+Time:[73ms]
+Params:{"id":"98ae72b3-b93d-41aa-868c-2ae461838b75"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[25ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: PUT 
+Url: /boards/02269734-023f-4700-86bc-beff99be566e 
+Status Code:200 
+Time:[35ms]
+Params:{"id":"02269734-023f-4700-86bc-beff99be566e"}
+Body:{"title":"Autotest updated board","id":"02269734-023f-4700-86bc-beff99be566e","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards/02269734-023f-4700-86bc-beff99be566e 
+Status Code:200 
+Time:[8ms]
+Params:{"id":"02269734-023f-4700-86bc-beff99be566e"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/02269734-023f-4700-86bc-beff99be566e 
+Status Code:200 
+Time:[18ms]
+Params:{"id":"02269734-023f-4700-86bc-beff99be566e"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/a1889c8a-a26e-4275-853b-864a92c2c9b4 
+Status Code:200 
+Time:[20ms]
+Params:{"id":"a1889c8a-a26e-4275-853b-864a92c2c9b4"}
+Body:{}
+
+Method: GET 
+Url: /boards/a1889c8a-a26e-4275-853b-864a92c2c9b4 
+Status Code:404 
+Time:[8ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[28ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks 
+Status Code:201 
+Time:[41ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks 
+Status Code:201 
+Time:[165ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks 
+Status Code:201 
+Time:[183ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks 
+Status Code:201 
+Time:[189ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks 
+Status Code:201 
+Time:[204ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","userId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/523e5340-b3b4-4f3e-a5fc-c10e6b633923 
+Status Code:200 
+Time:[14ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","taskId":"523e5340-b3b4-4f3e-a5fc-c10e6b633923"}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/60ab1a64-f6b7-476f-b4e5-638139783896 
+Status Code:200 
+Time:[13ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","taskId":"60ab1a64-f6b7-476f-b4e5-638139783896"}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/474822b0-a307-43ac-a0d7-ac57e2048a34 
+Status Code:200 
+Time:[23ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","taskId":"474822b0-a307-43ac-a0d7-ac57e2048a34"}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/29455dde-4f09-411f-8244-84e0c465e5d5 
+Status Code:200 
+Time:[21ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","taskId":"29455dde-4f09-411f-8244-84e0c465e5d5"}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/fdfebcd3-042e-45dc-b927-557d722e8773 
+Status Code:200 
+Time:[18ms]
+Params:{"boardId":"71fadb0c-fd58-425a-ae1e-09c557bc86ef","taskId":"fdfebcd3-042e-45dc-b927-557d722e8773"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef 
+Status Code:200 
+Time:[25ms]
+Params:{"id":"71fadb0c-fd58-425a-ae1e-09c557bc86ef"}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/474822b0-a307-43ac-a0d7-ac57e2048a34 
+Status Code:404 
+Time:[14ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/523e5340-b3b4-4f3e-a5fc-c10e6b633923 
+Status Code:404 
+Time:[17ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/29455dde-4f09-411f-8244-84e0c465e5d5 
+Status Code:404 
+Time:[17ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/fdfebcd3-042e-45dc-b927-557d722e8773 
+Status Code:404 
+Time:[18ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/71fadb0c-fd58-425a-ae1e-09c557bc86ef/tasks/60ab1a64-f6b7-476f-b4e5-638139783896 
+Status Code:404 
+Time:[16ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/09a3d59e-cafd-4465-95b6-bc3c656d1cce 
+Status Code:200 
+Time:[45ms]
+Params:{"id":"09a3d59e-cafd-4465-95b6-bc3c656d1cce"}
+Body:{}
+
+Method: GET 
+Url: /users 
+Status Code:200 
+Time:[13ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[26ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: GET 
+Url: /users/c94d9737-7da9-4dd6-8837-82911cbf1d25 
+Status Code:200 
+Time:[13ms]
+Params:{"id":"c94d9737-7da9-4dd6-8837-82911cbf1d25"}
+Body:{}
+
+Method: DELETE 
+Url: /users/c94d9737-7da9-4dd6-8837-82911cbf1d25 
+Status Code:204 
+Time:[17ms]
+Params:{"id":"c94d9737-7da9-4dd6-8837-82911cbf1d25"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/869d7604-d235-47d8-b9ae-a665a2c300ce 
+Status Code:204 
+Time:[17ms]
+Params:{"id":"869d7604-d235-47d8-b9ae-a665a2c300ce"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/3607c096-4bb3-41d7-b930-e7af2c0ea06b 
+Status Code:200 
+Time:[15ms]
+Params:{"id":"3607c096-4bb3-41d7-b930-e7af2c0ea06b"}
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"3607c096-4bb3-41d7-b930-e7af2c0ea06b"}
+
+Method: GET 
+Url: /users/3607c096-4bb3-41d7-b930-e7af2c0ea06b 
+Status Code:200 
+Time:[10ms]
+Params:{"id":"3607c096-4bb3-41d7-b930-e7af2c0ea06b"}
+Body:{}
+
+Method: DELETE 
+Url: /users/3607c096-4bb3-41d7-b930-e7af2c0ea06b 
+Status Code:204 
+Time:[22ms]
+Params:{"id":"3607c096-4bb3-41d7-b930-e7af2c0ea06b"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[23ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/18ebdd2b-cf51-401b-b675-3e53162ca278 
+Status Code:204 
+Time:[23ms]
+Params:{"id":"18ebdd2b-cf51-401b-b675-3e53162ca278"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[35ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[26ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks 
+Status Code:201 
+Time:[26ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"5e05440b-8914-4d23-9630-5d35757bd092","boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0"}
+
+Method: POST 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks 
+Status Code:201 
+Time:[29ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"5e05440b-8914-4d23-9630-5d35757bd092","boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0"}
+
+Method: DELETE 
+Url: /users/5e05440b-8914-4d23-9630-5d35757bd092 
+Status Code:204 
+Time:[20ms]
+Params:{"id":"5e05440b-8914-4d23-9630-5d35757bd092"}
+Body:{}
+
+Method: GET 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks/ac3475f6-e8b5-43f3-ae4f-89b121135612 
+Status Code:200 
+Time:[6ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0","taskId":"ac3475f6-e8b5-43f3-ae4f-89b121135612"}
+Body:{}
+
+Method: GET 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks/49197286-1545-4261-baec-87b49841a7fe 
+Status Code:200 
+Time:[5ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0","taskId":"49197286-1545-4261-baec-87b49841a7fe"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks/49197286-1545-4261-baec-87b49841a7fe 
+Status Code:204 
+Time:[24ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0","taskId":"49197286-1545-4261-baec-87b49841a7fe"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0/tasks/ac3475f6-e8b5-43f3-ae4f-89b121135612 
+Status Code:204 
+Time:[23ms]
+Params:{"boardId":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0","taskId":"ac3475f6-e8b5-43f3-ae4f-89b121135612"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0 
+Status Code:200 
+Time:[36ms]
+Params:{"id":"7b2f2d35-c3ae-4cc1-9380-9d4f98f759d0"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks 
+Status Code:201 
+Time:[30ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks 
+Status Code:200 
+Time:[6ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/13d728cd-030c-4ffe-829a-3cd6c5dc466d 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"13d728cd-030c-4ffe-829a-3cd6c5dc466d"}
+Body:{}
+
+Method: POST 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks 
+Status Code:201 
+Time:[31ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: DELETE 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/9bc248f4-ec4e-4886-ad7a-68bcab4c0ee5 
+Status Code:204 
+Time:[14ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"9bc248f4-ec4e-4886-ad7a-68bcab4c0ee5"}
+Body:{}
+
+Method: POST 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks 
+Status Code:201 
+Time:[20ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/4a10c7bf-be0c-4e74-b6e7-caabe40e804f 
+Status Code:200 
+Time:[15ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"4a10c7bf-be0c-4e74-b6e7-caabe40e804f"}
+Body:{"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"4a10c7bf-be0c-4e74-b6e7-caabe40e804f","userId":null,"boardId":"d2225696-0dfe-4669-b453-998199e56960"}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/4a10c7bf-be0c-4e74-b6e7-caabe40e804f 
+Status Code:200 
+Time:[13ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"4a10c7bf-be0c-4e74-b6e7-caabe40e804f"}
+Body:{}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/13d728cd-030c-4ffe-829a-3cd6c5dc466d 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"13d728cd-030c-4ffe-829a-3cd6c5dc466d"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/13d728cd-030c-4ffe-829a-3cd6c5dc466d 
+Status Code:204 
+Time:[14ms]
+Params:{"boardId":"d2225696-0dfe-4669-b453-998199e56960","taskId":"13d728cd-030c-4ffe-829a-3cd6c5dc466d"}
+Body:{}
+
+Method: GET 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960/tasks/13d728cd-030c-4ffe-829a-3cd6c5dc466d 
+Status Code:404 
+Time:[13ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/d2225696-0dfe-4669-b453-998199e56960 
+Status Code:200 
+Time:[29ms]
+Params:{"id":"d2225696-0dfe-4669-b453-998199e56960"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[50ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[6ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards 
+Status Code:200 
+Time:[10ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/08d2a036-6c60-432a-80a5-f0eee2602c4b 
+Status Code:200 
+Time:[9ms]
+Params:{"id":"08d2a036-6c60-432a-80a5-f0eee2602c4b"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[32ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/ba1291de-0521-4df6-afd4-21a5f7d95a49 
+Status Code:200 
+Time:[33ms]
+Params:{"id":"ba1291de-0521-4df6-afd4-21a5f7d95a49"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[25ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: PUT 
+Url: /boards/d376e5f9-1e4b-4c45-9e30-9d99d30b6add 
+Status Code:200 
+Time:[26ms]
+Params:{"id":"d376e5f9-1e4b-4c45-9e30-9d99d30b6add"}
+Body:{"title":"Autotest updated board","id":"d376e5f9-1e4b-4c45-9e30-9d99d30b6add","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards/d376e5f9-1e4b-4c45-9e30-9d99d30b6add 
+Status Code:200 
+Time:[11ms]
+Params:{"id":"d376e5f9-1e4b-4c45-9e30-9d99d30b6add"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/d376e5f9-1e4b-4c45-9e30-9d99d30b6add 
+Status Code:200 
+Time:[20ms]
+Params:{"id":"d376e5f9-1e4b-4c45-9e30-9d99d30b6add"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/a38fc858-59f3-4872-92fa-2e2113b8859a 
+Status Code:200 
+Time:[26ms]
+Params:{"id":"a38fc858-59f3-4872-92fa-2e2113b8859a"}
+Body:{}
+
+Method: GET 
+Url: /boards/a38fc858-59f3-4872-92fa-2e2113b8859a 
+Status Code:404 
+Time:[7ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[32ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks 
+Status Code:201 
+Time:[57ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{"title":"Task #5","order":5,"description":"Lorem ipsum","boardId":"3b2989c6-5178-4224-8112-a82090dd1273","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks 
+Status Code:201 
+Time:[179ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{"title":"Task #4","order":4,"description":"Lorem ipsum","boardId":"3b2989c6-5178-4224-8112-a82090dd1273","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks 
+Status Code:201 
+Time:[179ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","boardId":"3b2989c6-5178-4224-8112-a82090dd1273","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks 
+Status Code:201 
+Time:[184ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{"title":"Task #3","order":3,"description":"Lorem ipsum","boardId":"3b2989c6-5178-4224-8112-a82090dd1273","userId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks 
+Status Code:201 
+Time:[192ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","boardId":"3b2989c6-5178-4224-8112-a82090dd1273","userId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/7b3d2d8b-245c-4fc7-976f-0aa21e372d98 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273","taskId":"7b3d2d8b-245c-4fc7-976f-0aa21e372d98"}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/77aeac78-dd35-490c-8447-f1ddb094d5bc 
+Status Code:200 
+Time:[13ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273","taskId":"77aeac78-dd35-490c-8447-f1ddb094d5bc"}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/13d2b521-57af-464a-8ce3-2c7c13d68006 
+Status Code:200 
+Time:[14ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273","taskId":"13d2b521-57af-464a-8ce3-2c7c13d68006"}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/960b84c7-2827-46be-8a84-5faf7d3d725a 
+Status Code:200 
+Time:[14ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273","taskId":"960b84c7-2827-46be-8a84-5faf7d3d725a"}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/d966fc95-a689-4d9d-a35e-c591b38ff5e9 
+Status Code:200 
+Time:[14ms]
+Params:{"boardId":"3b2989c6-5178-4224-8112-a82090dd1273","taskId":"d966fc95-a689-4d9d-a35e-c591b38ff5e9"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273 
+Status Code:200 
+Time:[22ms]
+Params:{"id":"3b2989c6-5178-4224-8112-a82090dd1273"}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/77aeac78-dd35-490c-8447-f1ddb094d5bc 
+Status Code:404 
+Time:[11ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/13d2b521-57af-464a-8ce3-2c7c13d68006 
+Status Code:404 
+Time:[11ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/d966fc95-a689-4d9d-a35e-c591b38ff5e9 
+Status Code:404 
+Time:[29ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/7b3d2d8b-245c-4fc7-976f-0aa21e372d98 
+Status Code:404 
+Time:[28ms]
+Params:{}
+Body:{}
+
+Method: GET 
+Url: /boards/3b2989c6-5178-4224-8112-a82090dd1273/tasks/960b84c7-2827-46be-8a84-5faf7d3d725a 
+Status Code:404 
+Time:[28ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/08d2a036-6c60-432a-80a5-f0eee2602c4b 
+Status Code:200 
+Time:[42ms]
+Params:{"id":"08d2a036-6c60-432a-80a5-f0eee2602c4b"}
+Body:{}
+
+Method: GET 
+Url: /users 
+Status Code:200 
+Time:[11ms]
+Params:{}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: GET 
+Url: /users/b75c103b-1aaf-4a1d-a545-dc95a0a323c2 
+Status Code:200 
+Time:[11ms]
+Params:{"id":"b75c103b-1aaf-4a1d-a545-dc95a0a323c2"}
+Body:{}
+
+Method: DELETE 
+Url: /users/b75c103b-1aaf-4a1d-a545-dc95a0a323c2 
+Status Code:204 
+Time:[22ms]
+Params:{"id":"b75c103b-1aaf-4a1d-a545-dc95a0a323c2"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[21ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/0845a1db-bb02-42e5-a52a-e5d5810e093d 
+Status Code:204 
+Time:[15ms]
+Params:{"id":"0845a1db-bb02-42e5-a52a-e5d5810e093d"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[22ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/2b8b8829-ec65-4f37-a00a-818beddcd52d 
+Status Code:200 
+Time:[16ms]
+Params:{"id":"2b8b8829-ec65-4f37-a00a-818beddcd52d"}
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd","id":"2b8b8829-ec65-4f37-a00a-818beddcd52d"}
+
+Method: GET 
+Url: /users/2b8b8829-ec65-4f37-a00a-818beddcd52d 
+Status Code:200 
+Time:[13ms]
+Params:{"id":"2b8b8829-ec65-4f37-a00a-818beddcd52d"}
+Body:{}
+
+Method: DELETE 
+Url: /users/2b8b8829-ec65-4f37-a00a-818beddcd52d 
+Status Code:204 
+Time:[24ms]
+Params:{"id":"2b8b8829-ec65-4f37-a00a-818beddcd52d"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[27ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/380ae8ac-788f-424d-b380-36c298d5b0f4 
+Status Code:204 
+Time:[18ms]
+Params:{"id":"380ae8ac-788f-424d-b380-36c298d5b0f4"}
+Body:{}
+
+Method: POST 
+Url: /users 
+Status Code:201 
+Time:[25ms]
+Params:{}
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks 
+Status Code:201 
+Time:[32ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf"}
+Body:{"title":"Task #1","order":1,"description":"Lorem ipsum","userId":"24548355-43bf-4a27-b3ff-6130df22f8bf","boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf"}
+
+Method: POST 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks 
+Status Code:201 
+Time:[46ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf"}
+Body:{"title":"Task #2","order":2,"description":"Lorem ipsum","userId":"24548355-43bf-4a27-b3ff-6130df22f8bf","boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf"}
+
+Method: DELETE 
+Url: /users/24548355-43bf-4a27-b3ff-6130df22f8bf 
+Status Code:204 
+Time:[35ms]
+Params:{"id":"24548355-43bf-4a27-b3ff-6130df22f8bf"}
+Body:{}
+
+Method: GET 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks/0854823e-a851-4c4d-a335-49124098d6de 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf","taskId":"0854823e-a851-4c4d-a335-49124098d6de"}
+Body:{}
+
+Method: GET 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks/af86da00-6ce8-44f8-be42-868a963ac113 
+Status Code:200 
+Time:[8ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf","taskId":"af86da00-6ce8-44f8-be42-868a963ac113"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks/0854823e-a851-4c4d-a335-49124098d6de 
+Status Code:204 
+Time:[16ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf","taskId":"0854823e-a851-4c4d-a335-49124098d6de"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf/tasks/af86da00-6ce8-44f8-be42-868a963ac113 
+Status Code:204 
+Time:[18ms]
+Params:{"boardId":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf","taskId":"af86da00-6ce8-44f8-be42-868a963ac113"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf 
+Status Code:200 
+Time:[22ms]
+Params:{"id":"f78efa98-b0d9-4dbe-9d3c-453eb37bf9bf"}
+Body:{}
+
+Method: POST 
+Url: /boards 
+Status Code:201 
+Time:[24ms]
+Params:{}
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks 
+Status Code:201 
+Time:[20ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks 
+Status Code:200 
+Time:[11ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks 
+Status Code:200 
+Time:[9ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/40af28c5-00d4-40a1-a671-895e62c679f9 
+Status Code:200 
+Time:[7ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"40af28c5-00d4-40a1-a671-895e62c679f9"}
+Body:{}
+
+Method: POST 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks 
+Status Code:201 
+Time:[21ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: DELETE 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/0e04fe6f-0798-4a0c-95c9-2b92dd4bba67 
+Status Code:204 
+Time:[14ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"0e04fe6f-0798-4a0c-95c9-2b92dd4bba67"}
+Body:{}
+
+Method: POST 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks 
+Status Code:201 
+Time:[20ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/4d4c53f9-9cb5-4a74-a480-daf44fcc11a8 
+Status Code:200 
+Time:[16ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"4d4c53f9-9cb5-4a74-a480-daf44fcc11a8"}
+Body:{"title":"Autotest updated task","order":0,"description":"Lorem ipsum","columnId":null,"id":"4d4c53f9-9cb5-4a74-a480-daf44fcc11a8","userId":null,"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/4d4c53f9-9cb5-4a74-a480-daf44fcc11a8 
+Status Code:200 
+Time:[8ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"4d4c53f9-9cb5-4a74-a480-daf44fcc11a8"}
+Body:{}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/40af28c5-00d4-40a1-a671-895e62c679f9 
+Status Code:200 
+Time:[5ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"40af28c5-00d4-40a1-a671-895e62c679f9"}
+Body:{}
+
+Method: DELETE 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/40af28c5-00d4-40a1-a671-895e62c679f9 
+Status Code:204 
+Time:[14ms]
+Params:{"boardId":"f8409844-f0dd-495e-b3c1-f8b3288be89e","taskId":"40af28c5-00d4-40a1-a671-895e62c679f9"}
+Body:{}
+
+Method: GET 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e/tasks/40af28c5-00d4-40a1-a671-895e62c679f9 
+Status Code:404 
+Time:[7ms]
+Params:{}
+Body:{}
+
+Method: DELETE 
+Url: /boards/f8409844-f0dd-495e-b3c1-f8b3288be89e 
+Status Code:200 
+Time:[118ms]
+Params:{"id":"f8409844-f0dd-495e-b3c1-f8b3288be89e"}
+Body:{}
