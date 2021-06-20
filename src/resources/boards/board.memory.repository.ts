@@ -1,6 +1,6 @@
 //import {getAllTaskByBoardIdService, deleteTaskService} from '../tasks/task.service';
 import {Board} from '../../entities/board';
-//import { Task } from '../../entities/task';
+import { Task } from '../../entities/task';
 import { IBoard } from '../../types/types';
 import { getRepository } from 'typeorm';
 
@@ -52,6 +52,8 @@ const deleteBoard = async (id: string | undefined): Promise<"deleted" | "not fou
   const res = await boardRepo.findOne(id)
   if (res === undefined || id === undefined) return "not found"
   const deletedUser = await boardRepo.delete(id)
+  const taskRepo = getRepository(Task);
+  await taskRepo.delete({boardId: id})
   if (deletedUser.affected) return "deleted"
   return "not found"
   // const tasks = await getAllTaskByBoardIdService(id);

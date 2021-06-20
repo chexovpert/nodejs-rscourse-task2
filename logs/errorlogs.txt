@@ -1222,3 +1222,66 @@ Error Status Code:404
 Error message:board not found 
 Time:[1ms]
 Body:{}
+
+Method: GET 
+Url: /boards/61168a99-1b52-49a3-a5c8-054e849bdf24 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d51b0f28-442d-49d3-b1dc-2221975010a8/tasks/518d51c1-a6d6-4e64-a31a-1f1ebbaea783 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/591d53df-fc70-4b04-800f-4d6b0fb39879 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd9dfb81-7c6d-4bd6-bb82-03a28261f748/tasks/50e9752b-2726-4740-9fef-5a58f2273d71 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd9dfb81-7c6d-4bd6-bb82-03a28261f748/tasks/b3f96141-6031-4d04-b7c7-c92c607fbb92 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd9dfb81-7c6d-4bd6-bb82-03a28261f748/tasks/fc3171d0-7b81-4fc9-a9be-353a811e4fe5 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd9dfb81-7c6d-4bd6-bb82-03a28261f748/tasks/ccfd8165-c8f5-4780-bb60-1af85a1dc3f6 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd9dfb81-7c6d-4bd6-bb82-03a28261f748/tasks/99190ddc-946f-4239-b3a4-89c3b538dcad 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/e2dac922-d929-4c59-9de6-889acf28db1b/tasks/0fcdd00e-4a1e-4495-a887-19ad4c965972 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}

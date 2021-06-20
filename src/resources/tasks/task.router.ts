@@ -12,8 +12,9 @@ router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promis
 });
 
 router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
-  const reqBody: ITask = {...req.body}
+  
   const boardId : string | undefined = req.params["boardId"]
+  const reqBody: ITask = {...req.body, boardId}
   if (boardId !== undefined) {
     const post = await postTaskService(reqBody)
     res.status(201).json(post)
