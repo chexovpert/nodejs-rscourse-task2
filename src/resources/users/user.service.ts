@@ -8,7 +8,7 @@ const getAllService = () : Promise<User[]> => getAll();
 const getUserByIdService = (id: string | undefined): Promise<User| undefined> => getUserById(id);
 
 
-const postUserService = (reqBody: IReqUser): Promise<User> => postUser(reqBody);
+const postUserService = (reqBody: IReqUser): Promise<User | undefined> => postUser(reqBody);
 
 /**
  * Deletes a user by ID service

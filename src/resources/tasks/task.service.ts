@@ -1,5 +1,6 @@
 import { getAllTaskByBoardId, postTask, getTaskByBoardIdAndTaskId, updateTaskByBoardIdAndTaskId, deleteTask, getAllTasks } from './task.memory.repository';
-import { IReqTask, Task } from "./task.model";
+import { Task } from "../../entities/task";
+import { ITask } from "../../types/types";
 /** @module Task_Service */
 
 /**
@@ -20,7 +21,7 @@ const getAllTaskByBoardIdService = (boardId: string | undefined): Promise<Task[]
  * @param {Task} task new task
  * @returns {Promise<Task>} task
  */
-const postTaskService = (task: Task): Promise<Task>  => postTask(task);
+const postTaskService = (itask: ITask): Promise<Task | undefined>  => postTask(itask);
 
 /**
  * Gets tasks by board id and task id service
@@ -37,7 +38,7 @@ const getTaskByBoardIdAndTaskIdService = (boardId: string| undefined,taskId: str
  * @param {IReqTask} reqBody updated task information
  * @returns {Promise<Task>} updated task
  */
-const updateTaskByBoardIdAndTaskIdService = (boardId: string| undefined,taskId: string| undefined, reqBody: IReqTask): Promise<Task| undefined> => updateTaskByBoardIdAndTaskId(boardId,taskId, reqBody)
+const updateTaskByBoardIdAndTaskIdService = (boardId: string| undefined,taskId: string| undefined, reqBody: ITask): Promise<Task| undefined> => updateTaskByBoardIdAndTaskId(boardId,taskId, reqBody)
 
 /**
  * Deletes task by board id and task id
@@ -45,7 +46,7 @@ const updateTaskByBoardIdAndTaskIdService = (boardId: string| undefined,taskId: 
  * @param {string} taskId task id
  * @returns {Promise<void>}
  */
-const deleteTaskService = (boardId: string| undefined, taskId: string| undefined): Promise<void> => deleteTask(boardId, taskId)
+const deleteTaskService = (boardId: string| undefined, taskId: string| undefined): Promise<"deleted" | "not found"> => deleteTask(boardId, taskId)
 
 
 export { getAllTasksService, getAllTaskByBoardIdService, postTaskService, getTaskByBoardIdAndTaskIdService, updateTaskByBoardIdAndTaskIdService, deleteTaskService };

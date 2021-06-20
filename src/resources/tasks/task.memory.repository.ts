@@ -1,77 +1,77 @@
-import { IReqTask, Task } from "./task.model";
-/** @module Task_Memory */
+import { getRepository } from "typeorm";
+import { Task } from "../../entities/task";
+import { ITask } from "../../types/types";
 
-const TASKS: Task[] = [];
-/**
- * Gets all tasks
- * @returns {Promise<Task[]>} task
- */
-const getAllTasks = async (): Promise<Task[]> => TASKS
 
-/**
- * Gets all tasks by board id
- * @param {string} boardId board id
- * @returns {Promise<Task[]>} task
- */
+//const TASKS: Task[] = [];
+
+const getAllTasks = async (): Promise<Task[]> => {
+  const taskRepo = getRepository(Task)
+  return taskRepo.find({where: {}})
+}
+
 const getAllTaskByBoardId = async (boardId: string| undefined): Promise<Task[]> => {
-  const tasks = TASKS.filter((tsk) => tsk.boardId === boardId)
-  return tasks;
+  const taskRepo = getRepository(Task);
+  console.log(await taskRepo.find({where: {}}));
+  
+  return taskRepo.find({where: {boardId: `${boardId}`}})
+  // const tasks = TASKS.filter((tsk) => tsk.boardId === boardId)
+  // return tasks;
 };
 
-/**
- * Creates a new task
- * @param {Task} task new task
- * @returns {Promise<Task>} task
- */
-const postTask = async (task: Task): Promise<Task> => {
-  TASKS.push(task);
-  return task
+const postTask = async (itask: ITask): Promise<Task | undefined> => {
+  const taskRepo = getRepository(Task);
+  const newTask = taskRepo.create(itask)
+  const savedTask = taskRepo.save(newTask);
+  const savedId = (await savedTask).id
+  if (savedId) return taskRepo.findOne(savedId)
+  return undefined
+  // TASKS.push(task);
+  // return task
 }
-/**
- * Gets task by board id and task id
- * @param {string} boardId id of board to which this task belongs
- * @param {string} id id of task
- * @returns {Promise<Task>}
- */
+
 const getTaskByBoardIdAndTaskId = async (boardId: string | undefined, id: string | undefined): Promise<Task| undefined> => {
-  const tasks = await getAllTaskByBoardId(boardId);
-  const task = tasks.find((tsk) => tsk.id === id)
-  if (task === undefined) {
-    return undefined
-  }
-  return task
+  const taskRepo = getRepository(Task);
+  if (boardId === undefined || id === undefined) return undefined
+  return taskRepo.findOne({where: {boardId: boardId, id: id}})
+  // const tasks = await getAllTaskByBoardId(boardId);
+  // const task = tasks.find((tsk) => tsk.id === id)
+  // if (task === undefined) {
+  //   return undefined
+  // }
+  // return task
 }
-/**
- * Updates task by board id and task id
- * @param {string} searchBoardId id of board to which this task belongs
- * @param {string} id id of task
- * @param {reqBody} reqBody updated task information
- * @returns {Promise<Task>} updated task
- */
-const updateTaskByBoardIdAndTaskId = async (searchBoardId: string| undefined, id: string| undefined, reqBody: IReqTask): Promise<Task| undefined> => {
-  const {title, order, description, userId, boardId, columnId} = reqBody
-  const task = await getTaskByBoardIdAndTaskId(searchBoardId, id);
-  if (task) {
-  task.title = title;
-  task.order = order;
-  task.description = description;
-  task.userId = userId;
-  task.boardId = boardId;
-  task.columnId = columnId;
-  return task
-  } else {
-      return undefined
-  }
+
+const updateTaskByBoardIdAndTaskId = async (searchBoardId: string| undefined, id: string| undefined, reqBody: ITask): Promise<Task| undefined> => {
+  const taskRepo = getRepository(Task);
+  const res = await taskRepo.findOne({where:{ boardId : searchBoardId, id: id}})
+  if (res === undefined || searchBoardId === undefined || id === undefined) return undefined
+  const updatedTask = await taskRepo.update({ boardId : searchBoardId, id: id}, reqBody)
+  return updatedTask.raw
+  // const {title, order, description, userId, boardId, columnId} = reqBody
+  // const task = await getTaskByBoardIdAndTaskId(searchBoardId, id);
+  // if (task) {
+  // task.title = title;
+  // task.order = order;
+  // task.description = description;
+  // task.userId = userId;
+  // task.boardId = boardId;
+  // task.columnId = columnId;
+  // return task
+  // } else {
+  //     return undefined
+  // }
 }
-/**
- * Deletes task by board id and task id
- * @param {string} boardId id of board to which this task belongs
- * @param {string} id task id
- * @returns {Promise<void>}
- */
-const deleteTask = async (boardId: string| undefined, id: string| undefined): Promise<void> => {
-  const taskId = TASKS.findIndex((tsk)=> tsk.id === id && tsk.boardId ===boardId);
-  TASKS.splice(taskId,1)
+
+const deleteTask = async (boardId: string| undefined, id: string| undefined): Promise<"deleted" | "not found"> => {
+  const taskRepo = getRepository(Task);
+  const res = await taskRepo.findOne({where:{ boardId : boardId, id: id}})
+  if (res === undefined || id === undefined || boardId === undefined) return "not found"
+  const deletedTask = await taskRepo.delete({ boardId : boardId, id: id})
+  if(deletedTask.affected) return 'deleted'
+  return 'not found'
+  // const taskId = TASKS.findIndex((tsk)=> tsk.id === id && tsk.boardId ===boardId);
+  // TASKS.splice(taskId,1)
 }
 
 export { getAllTaskByBoardId, postTask, getTaskByBoardIdAndTaskId, updateTaskByBoardIdAndTaskId, deleteTask, getAllTasks };

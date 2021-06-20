@@ -1,5 +1,6 @@
 import {Router, Request, Response, NextFunction} from "express"
-import { IReqTask, Task } from "./task.model";
+//import { Task } from "../../entities/task";
+import { ITask } from "../../types/types";
 import { getAllTaskByBoardIdService, postTaskService, getTaskByBoardIdAndTaskIdService, updateTaskByBoardIdAndTaskIdService, deleteTaskService } from './task.service';
 import {RestError} from '../../middleware/middleware'
 
@@ -11,12 +12,10 @@ router.route('/:boardId/tasks').get(async (req: Request, res: Response) : Promis
 });
 
 router.route('/:boardId/tasks').post(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
-  const reqBody: IReqTask = {...req.body}
+  const reqBody: ITask = {...req.body}
   const boardId : string | undefined = req.params["boardId"]
   if (boardId !== undefined) {
-    const task = new Task({...reqBody, boardId});
-    
-    const post = await postTaskService(task)
+    const post = await postTaskService(reqBody)
     res.status(201).json(post)
   } else {
     next(RestError.badRequest('board not found'))
@@ -43,7 +42,7 @@ router.route('/:boardId/tasks/:taskId').get(async (req: Request, res: Response, 
 
 router.route('/:boardId/tasks/:taskId').put(async (req: Request, res: Response) : Promise<void> => {
   const {boardId, taskId} = req.params;
-  const reqBody: IReqTask = req.body
+  const reqBody: ITask = req.body
   const task = await updateTaskByBoardIdAndTaskIdService(boardId, taskId, reqBody);
   res.json((task))
 })

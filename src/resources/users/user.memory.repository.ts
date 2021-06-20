@@ -1,5 +1,6 @@
 import {getRepository} from "typeorm"
-//import {getAllTasksService} from '../tasks/task.service';
+//import {getAllTasksService, deleteTaskService} from '../tasks/task.service';
+import { Task } from "../../entities/task";
 import {User} from "../../entities/user"
 import {IReqUser} from "../../types/types"
 
@@ -13,14 +14,18 @@ const getAll = async () : Promise<User[]> => {
 const getUserById = async (id: string | undefined) : Promise<User| undefined>  => {
   const userRepo = getRepository(User);
   //const userById = USERS.find((user) => user.id === id);
+  //console.log(await userRepo.findOne(id));
   return userRepo.findOne(id);
 };
 
-const postUser = async (reqBody: IReqUser) : Promise<User> => {
+const postUser = async (reqBody: IReqUser) : Promise<User | undefined> => {
   const userRepo = getRepository(User);
   const newUser = userRepo.create(reqBody);
   const savedUser = userRepo.save(newUser);
-  return savedUser
+  const savedId = (await savedUser).id
+  //console.log(await savedUser);
+  if (savedId) return userRepo.findOne(savedId)
+  return undefined
   //USERS.push(user);
   //return user;
 };
@@ -29,21 +34,26 @@ const deleteUser = async (id: string| undefined) : Promise<"deleted" | "not foun
   const userRepo = getRepository(User);
   const res = await userRepo.findOne(id)
   if (res === undefined || id === undefined) return "not found"
+  const taskRepo = getRepository(Task);
+  await taskRepo.update({userId: id}, {userId: null })
   const deletedUser = await userRepo.delete(id)
   if (deletedUser.affected) return "deleted"
   return "not found"
-  // const userId = USERS.findIndex((user) => user.id === id);
-  // USERS.splice(userId, 1);
   // const tasks = await getAllTasksService();
-  //console.log(tasks);
-  
+  // console.log(tasks);
   // tasks.forEach((tsk) => {
   //   if (tsk.userId === id) {
   //     //Object.assign(tsk, { userId: null });
+
   //     tsk.userId = null
   //     //console.log("deleted smhow");
   //   }
   // });
+  // const userId = USERS.findIndex((user) => user.id === id);
+  // USERS.splice(userId, 1);
+
+  
+
 };
 
 const updateUser = async (id: string| undefined, reqBody: IReqUser) : Promise<User| undefined>  => {

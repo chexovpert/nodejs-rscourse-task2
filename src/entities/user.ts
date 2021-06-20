@@ -7,13 +7,13 @@ export class User extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string | undefined;
 
-  @Column('varchar', {length: 25})
+  @Column('varchar', {length: 35, nullable: true})
   name: string = 'USER';
 
-  @Column('varchar', {length: 25})
+  @Column('varchar', {length: 35, nullable: true})
   login: string = 'user';
 
-  @Column('varchar', {length: 25, select: false})
+  @Column('varchar', {length: 35, select: false, nullable: true})
   password: string | undefined;
 
 

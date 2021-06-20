@@ -1,18 +1,18 @@
 import {Router, Request, Response, NextFunction} from "express";
-import {Board} from './board.model';
+//import {Board} from '../../entities/board';
 import boardsService from'./board.service';
 import {RestError} from '../../middleware/middleware'
 
 const router = Router();
 router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
   const boards = await boardsService.getAllService();
-  res.status(200).json(boards.map(Board.toResponse));
+  res.status(200).json(boards);
 });
 
 router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
-  const board = new Board({ ...req.body });
+  const board = ({ ...req.body });
   const post = await boardsService.postBoardService(board);
-  res.status(201).json(Board.toResponse(post));
+  res.status(201).json(post);
 });
 
 router.route('/:id').get(async (req: Request, res: Response, next: NextFunction) : Promise<void> => {
@@ -32,7 +32,7 @@ router.route('/:id').put(async (req: Request, res: Response, next: NextFunction)
   const reqBody = req.body;
   const board = await boardsService.updateBoardService(id, reqBody);
   if (board) {
-    res.json(Board.toResponse(board));
+    res.json(board);
   }
   else {
     next(RestError.badRequest('board not found'));

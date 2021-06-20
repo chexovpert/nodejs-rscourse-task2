@@ -591,3 +591,634 @@ Error Status Code:404
 Error message:board not found 
 Time:[1ms]
 Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(25)
+
+Method: GET 
+Url: /boards/0bb953f7-fa49-466c-bb99-b867a3686ed2/tasks/4836e94b-0b28-4ac8-acf4-02f8ebcfda11 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/96037a28-0a9e-4cb2-a247-24d50e1d0831 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4de3b1bb-96a7-4171-90c1-741297f71d17/tasks/80bdf1e9-1f8b-42ed-9429-0742797f5369 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4de3b1bb-96a7-4171-90c1-741297f71d17/tasks/978c0a20-24f8-468d-bc05-d27be1be0199 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4de3b1bb-96a7-4171-90c1-741297f71d17/tasks/e2b94766-a894-4475-966a-6bec6d6aba26 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4de3b1bb-96a7-4171-90c1-741297f71d17/tasks/6da1d8b6-d70e-4ebd-bdff-a7e9db64c346 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4de3b1bb-96a7-4171-90c1-741297f71d17/tasks/5343b6db-d914-4797-876d-05a2eb0ccc34 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(25)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "undefined"
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(25)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/f1dc56d5-f5f1-4f26-a105-d582caf8bca0 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "undefined"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(25)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "undefined"
+
+Method: GET 
+Url: /boards/cc535377-1dbf-4590-b42f-224b66508369 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "undefined"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "columnId" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/b51965b8-d03e-425d-93b1-f06546840fe3 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "userId" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/null/tasks/828df5ea-7f5d-4b0c-af23-ef81a2dbf54b 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/9f49d11b-a2b8-47a8-87b0-cc0687923def/tasks/1f56395a-9030-4444-a8ce-566e09332644 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/9badc364-7dbf-46ad-b823-2ccab8c62266 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/19223cad-274f-420b-a194-37d161cb4912 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4598df27-9c26-4bfb-bc61-db325db52e8e/tasks/0fb82c95-5b80-4350-b2a9-1d160962ca8a 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/724e2237-a1df-4f53-8db5-5682bcfc274e 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "id" отношения "Task" нарушает ограничение NOT NULL
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "id" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/null/tasks/bf5b1ee6-0b8b-44e8-bb66-2eb2d0486b41 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/73263c52-829f-44ba-b275-0c78d064de9a/tasks/1900deda-8d75-483f-b80a-cc1959d551fa 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/357b1216-28b8-4cb8-978b-8d4d60cd325b 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "id" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/402a1ddc-d8a8-4d16-b6fd-3054c407076e 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/62ff5346-7699-431f-940d-b6bf537c605a 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0c12cb9d-f06d-4c71-9d42-815908b242cd/tasks/7c66c437-c642-40a3-9364-dd7cfa7f2bed 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение NULL в столбце "id" отношения "Task" нарушает ограничение NOT NULL
+
+Method: GET 
+Url: /boards/cfcf1c90-13f0-4415-a5a3-6f0d595fa81e 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/766345d9-b9b4-494e-ba3b-59331cc62869 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/ee9cb382-d1fa-4591-8727-93e36cbc4aa0/tasks/243e6e1b-76c0-48cb-9137-fef93bc74171 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/062830b6-9693-4545-af82-13d77fa84188 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/5a1e4fed-4780-43a1-be30-8518ba515ea4 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/40804bc7-0168-4c98-bdef-54a3d53e10a2/tasks/d8618321-de02-4a33-a372-1a8261db5944 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Unhandled Rejection at:[object Promise]reason: TypeError: Cannot read property 'connect' of undefined
+
+Method: GET 
+Url: /boards/6fdaadec-315c-42fb-81e6-cd5a159178ab 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/5124b03c-0a32-4b3c-b774-17b8deafba74 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/1b4a5535-1edc-407b-a14b-1613fcaa56ff/tasks/442e2460-5f17-4706-b3b3-128242abeb57 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: повторяющееся значение ключа нарушает ограничение уникальности "UQ_b9a04beac0d49f34e711895715c"
+
+Method: GET 
+Url: /boards/bba128dc-8ade-487b-8e5b-363d18bce9c5 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/aef61f4c-319c-4c33-aea6-f83069abd003 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/9be23369-99ee-495c-b4e9-24345fa53c27/tasks/0ef2a93f-a1da-43e2-9d95-2a10edb09aaf 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: повторяющееся значение ключа нарушает ограничение уникальности "UQ_b9a04beac0d49f34e711895715c"
+
+Method: GET 
+Url: /boards/49945d04-ea0c-4f0a-ab78-f0b46b6a04c6 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/bebb4d04-b360-490d-bb0a-13d66b1ef81f 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fbf9541d-39bd-4c56-8304-3d1558257021/tasks/474c1ee2-6532-45c8-966c-d2d867dadbe8 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: повторяющееся значение ключа нарушает ограничение уникальности "UQ_b9a04beac0d49f34e711895715c"
+
+Method: GET 
+Url: /boards/c462823e-fdc6-4d03-84bf-92809a18ed10 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/39f82f77-c2ce-473c-b5e0-177e1b9c7d45 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/52009d99-e12c-4720-b25f-441cb81d2317/tasks/b3c1eed7-0564-437d-8c00-095c1d859ee8 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f5d0da90-5085-46c7-85fe-0b826859a087 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/d90d9aa6-f05a-4cca-b3f9-34863d4036c6 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/66066d4a-c690-44ce-8fb0-e89379bc6c41/tasks/7086c58f-c444-4047-a85f-f876f25bff50 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/5a66a21d-78ee-44e3-a5fb-811cbc48a4bd 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/759f8637-58b5-483f-9eb2-2b5ef8da4826 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/e8498836-bc62-4632-ba70-af4b59acea3c/tasks/884d6c21-f170-40b5-b2a9-96de9d0df538 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/b56e6f2c-259c-4241-95ea-70fa348f896b 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/f8883188-617d-4b00-9795-5dcd87820ec1 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/9d454573-8a70-4004-a770-c62808c4bdf6/tasks/9fc69a97-d77e-49ac-9950-91232cfe1400 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/cd119586-261a-423c-b949-9e05941ba288 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/fc1af5b6-70a3-40e4-8cac-93e75f299d42 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/7ff1c6f6-a0b8-46bf-9bf3-72b7f41519b6/tasks/27602c2b-45a2-4460-81af-6eb43c4dd721 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8efe98f7-3c03-4956-a2c2-eabae3c1ce85 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/225794cf-e15f-4ebf-9f3d-bb7211896699 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d456a174-8f8e-4624-b9ea-bbb2c74a96ac/tasks/d6604dea-877e-4099-8780-36fa936db5a1 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/7c3bada9-27c3-4869-850d-e521b623bad3 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/28c518a9-18d0-469a-970a-59e8402e2b8b 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/a0f20aeb-bbdb-4b40-9011-636ff1391c86/tasks/a32d47d6-1b70-46e1-b9a7-654aeeab6b9f 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/a807fcf3-8b2f-4739-92fb-b6a23ec2e145 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/a41f75c3-7d48-40eb-963d-6d23ce2267f7 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/be75e9e2-fe3a-4fca-8e86-c676dfc8fb54/tasks/76ee74a7-0c6a-4983-b03f-cb604d0596f7 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/623441bc-6a27-4d8e-8e51-13e990a5565d 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/48a6f603-1fca-4af5-8df6-052215cec151 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/211ecd8c-ecab-4927-a789-d31541eb0d1d/tasks/9e3af70d-0991-42bf-bf4b-c608b95210ff 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/69d5a019-c3e2-46c7-abf4-dc6edfbbd57e 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/null/tasks/ccf75fad-a8f3-4e2d-a0f9-bcbab13a2c3c 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f19a40cd-afec-4971-8a81-6f3a9e3997b6/tasks/e2da0af9-7fb1-44b0-8d95-3a49a40eed3f 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
