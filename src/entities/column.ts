@@ -5,8 +5,8 @@ export class Columns extends BaseEntity {
     @PrimaryGeneratedColumn('uuid')
     id: string | undefined;
     @Column('varchar')
-    title: string = "base column";
+    title = "base column";
     @Column('int')
-    order: number = 0;
+    order = 0;
 }
 

@@ -8,10 +8,10 @@ export class User extends BaseEntity {
   id: string | undefined;
 
   @Column('varchar', {length: 35, nullable: true})
-  name: string = 'USER';
+  name = 'USER';
 
   @Column('varchar', {length: 35, nullable: true})
-  login: string = 'user';
+  login = 'user';
 
   @Column('varchar', {length: 35, select: false, nullable: true})
   password: string | undefined;

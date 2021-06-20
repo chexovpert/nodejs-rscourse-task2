@@ -12,7 +12,7 @@ const getAllTasks = async (): Promise<Task[]> => {
 
 const getAllTaskByBoardId = async (boardId: string| undefined): Promise<Task[]> => {
   const taskRepo = getRepository(Task);
-  console.log(await taskRepo.find({where: {}}));
+  //console.log(await taskRepo.find({where: {}}));
   
   return taskRepo.find({where: {boardId: `${boardId}`}})
   // const tasks = TASKS.filter((tsk) => tsk.boardId === boardId)

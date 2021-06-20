@@ -7,7 +7,7 @@ class Board extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string | undefined;
   @Column('varchar')
-  title: string = "base title";
+  title = "base title";
   @Column({ type: "json", nullable: true })
   columns?: string;
   

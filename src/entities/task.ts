@@ -7,13 +7,13 @@ export class Task extends BaseEntity {
     id: string| undefined ;
 
     @Column('varchar')
-    title: string = 'base string';
+    title = 'base string';
 
     @Column('int')
-    order: number=0;
+    order=0;
 
     @Column('varchar')
-    description: string = 'base description';
+    description = 'base description';
 
     @Column({type: 'text',
     nullable: true,})
