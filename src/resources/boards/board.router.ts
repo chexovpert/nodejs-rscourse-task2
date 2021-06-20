@@ -1,5 +1,4 @@
 import {Router, Request, Response, NextFunction} from "express";
-//import {Board} from '../../entities/board';
 import boardsService from'./board.service';
 import {RestError} from '../../middleware/middleware'
 

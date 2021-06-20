@@ -11,8 +11,6 @@ router.route('/').get(async (_req: Request, res: Response) : Promise<void> => {
 });
 router.route('/').post(async (req: Request, res: Response) : Promise<void> => {
   const reqBody: IReqUser = {...req.body}
-  //const user = new User(reqBody);
-
   const post = await postUserService(reqBody);
   res.status(201).json(post);
 });
