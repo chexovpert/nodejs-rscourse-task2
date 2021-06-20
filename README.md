@@ -1,5 +1,15 @@
 # RS School REST service
 
+
+## Docker setup
+1.Installing NPM modules
+```
+npm i 
+```
+2.Launch docker
+```
+docker-compose up
+```
 ## Prerequisites
 
 - Git - [Download & Install Git](https://git-scm.com/downloads).
