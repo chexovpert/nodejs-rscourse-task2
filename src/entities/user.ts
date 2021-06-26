@@ -1,22 +1,22 @@
-import {Entity, Column, PrimaryGeneratedColumn, BaseEntity} from 'typeorm'
-//import {v4 as uuid} from "uuid"
+import { Entity, Column, PrimaryGeneratedColumn, BaseEntity } from 'typeorm';
+import { IResUser } from '../types/types';
 
-
-@Entity({name: 'User'})
+@Entity({ name: 'User' })
 export class User extends BaseEntity {
   @PrimaryGeneratedColumn('uuid')
   id: string | undefined;
 
-  @Column('varchar', {length: 35, nullable: true})
+  @Column('varchar', { nullable: true })
   name = 'USER';
 
-  @Column('varchar', {length: 35, nullable: true})
+  @Column('varchar', { nullable: true })
   login = 'user';
 
-  @Column('varchar', {length: 35, select: false, nullable: true})
-  password: string | undefined;
+  @Column('varchar', { select: true, nullable: true })
+  password!: string;
 
-
-
+  static toResponse = (user: User): IResUser => {
+    const { id, login, name } = user;
+    return { id, login, name };
+  };
 }
-

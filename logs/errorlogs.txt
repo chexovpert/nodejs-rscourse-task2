@@ -2820,3 +2820,552 @@ Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверны�
 Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
 
 Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/82c7f84f-7812-4eda-b50b-437dabb28319 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fcaea130-9b1c-4c17-bc6d-fd9f7d42e52f/tasks/380e20fb-2217-45c6-9633-055131e2d7cc 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fcaea130-9b1c-4c17-bc6d-fd9f7d42e52f/tasks/6861eb88-348a-4c44-b409-204a8cb0b820 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fcaea130-9b1c-4c17-bc6d-fd9f7d42e52f/tasks/ce10832a-d55a-4ca0-8751-d91e557d9349 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fcaea130-9b1c-4c17-bc6d-fd9f7d42e52f/tasks/4da5f4e2-9f72-49bd-9038-f87321a47f11 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fcaea130-9b1c-4c17-bc6d-fd9f7d42e52f/tasks/6a9eb465-65e5-45f9-b95b-46db41d2530e 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/3005c940-10a6-463d-b9fc-9fca724546d3/tasks/45be562a-c9f0-43db-b79e-2e28532185fb 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: POST 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[3ms]
+Body:{"name":"user1","login":"user1","password":"user1"}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(35)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(35)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: значение не умещается в тип character varying(35)
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/f39988cf-c20a-4513-9c54-23870b9b1fd4 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f40c0abd-1328-4d55-a450-ae7b6fc4af50/tasks/9c3308bf-59c6-4350-9c54-099fb88a2438 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f40c0abd-1328-4d55-a450-ae7b6fc4af50/tasks/7eec46bd-52d7-4892-8a66-d18e84e7b5c0 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f40c0abd-1328-4d55-a450-ae7b6fc4af50/tasks/0b0aeb45-9b1d-482b-a625-3cbb30022ffb 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f40c0abd-1328-4d55-a450-ae7b6fc4af50/tasks/cfa20869-b868-4194-81e0-fe55ef0d1432 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/f40c0abd-1328-4d55-a450-ae7b6fc4af50/tasks/242ae168-105d-462f-8383-172590a18502 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0f197904-7a8c-4bba-8e63-3634d0f42774/tasks/01e87f74-1d9d-46ce-9ae3-4722a78a1d1a 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/8e67c6bb-eaf4-44eb-aa02-31f2e307517a 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/409128cf-ae17-4971-884e-200fd51c2653/tasks/e8191a0e-c0be-48cf-bf38-98c6c5e52720 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/409128cf-ae17-4971-884e-200fd51c2653/tasks/4ff42a1b-4b59-41c2-8646-db7764269340 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/409128cf-ae17-4971-884e-200fd51c2653/tasks/9dabbcf0-a749-4678-9af9-40172b38a095 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/409128cf-ae17-4971-884e-200fd51c2653/tasks/90aeb648-beb8-4445-9b49-8f734b6b0e64 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/409128cf-ae17-4971-884e-200fd51c2653/tasks/73b7d8d1-6fe4-4466-8db9-26c13406ebff 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/27ef6f6a-5d4d-4f67-a19f-080cd3081965/tasks/59f90f06-7fad-4f3e-8e69-2622c70eb8c9 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/4897c6e6-acf8-4013-b3f4-0528cb456a0f 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/456baf64-068d-4779-992b-9847d57cd01c/tasks/f7fa488f-eb4a-417e-8a3e-eccbeef31d4c 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/456baf64-068d-4779-992b-9847d57cd01c/tasks/3ae4c5d5-622d-44da-8f28-4ff0a0e3275f 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/456baf64-068d-4779-992b-9847d57cd01c/tasks/bc577634-193e-4fcd-b3b4-45b80e68460c 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/456baf64-068d-4779-992b-9847d57cd01c/tasks/0096093f-d885-434e-b37e-8ac02e0d4360 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/456baf64-068d-4779-992b-9847d57cd01c/tasks/5135f738-b86e-4c06-93f6-e25ff129a114 
+Error Status Code:404 
+Error message:board not found 
+Time:[33ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0cd4def5-deb5-47f1-bcc5-9c0659f4bf3c/tasks/543afd69-e407-446b-88fc-f0e1f2869c6f 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/450912f3-a903-44d3-94b6-a971c5db6342 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fc69a15f-0b9a-4f0f-9e62-92d03b00c072/tasks/07375cc4-06a6-4acd-9189-92bf9c6a32bd 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fc69a15f-0b9a-4f0f-9e62-92d03b00c072/tasks/dfb78b82-aa1a-4236-a6f0-39d27aab691f 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fc69a15f-0b9a-4f0f-9e62-92d03b00c072/tasks/eec39bf5-81ff-4277-a993-f2e32b6de71a 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fc69a15f-0b9a-4f0f-9e62-92d03b00c072/tasks/f763fc30-325f-4ce9-81d6-b44832f7ef68 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/fc69a15f-0b9a-4f0f-9e62-92d03b00c072/tasks/5603ddf2-4f6f-407b-a87d-7e40b28207a9 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/043f80a1-17d7-47f1-bbcc-472dd2a46bca/tasks/4562fdce-7d8e-4999-8d27-f83b4bd6a083 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[3ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[14ms]
+Body:{}
+
+Method: GET 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[4ms]
+Body:{}
+
+Method: GET 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[5ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"JsonWebTokenError","message":"jwt malformed","title":"Autotest updated board"}
+
+Method: PUT 
+Url: /boards/undefined/tasks/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"JsonWebTokenError","message":"jwt malformed","title":"Autotest updated task"}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards/undefined/tasks/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{}
+
+Method: DELETE 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[5ms]
+Body:{}
+
+Method: GET 
+Url: /boards/42f93fff-4f88-49ce-9e00-d20ac4c35837/tasks/d62bd19a-ff79-4ac6-b5f8-ab1211caf023 
+Error Status Code:404 
+Error message:board not found 
+Time:[3ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0b6f0ffe-f7af-421c-b2b8-11016ac317e7 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d0cd0e1c-efd0-49f4-b0ad-5ddb94f846b4/tasks/32727495-f2cd-47d9-b68f-47d984ad78ed 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d0cd0e1c-efd0-49f4-b0ad-5ddb94f846b4/tasks/d9ee7d6e-42c2-4c7d-8b20-54a44c5673a6 
+Error Status Code:404 
+Error message:board not found 
+Time:[2ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d0cd0e1c-efd0-49f4-b0ad-5ddb94f846b4/tasks/229eb5d5-e8e5-4f1e-a16c-80c31c774f9c 
+Error Status Code:404 
+Error message:board not found 
+Time:[2ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d0cd0e1c-efd0-49f4-b0ad-5ddb94f846b4/tasks/2c752176-8c70-4c82-94e7-8a3763fe435c 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/d0cd0e1c-efd0-49f4-b0ad-5ddb94f846b4/tasks/2ffa317f-449b-4dde-9a47-d0d58ab6a443 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
