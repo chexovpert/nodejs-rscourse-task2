@@ -75,7 +75,7 @@ const uncaughtExceptionHandler = (err: Error, origin: string) : void => {
     process.stdout.write(data);
 }
 
-const unhandledRejectionHandler = (reason: Error| any, promise: Promise<any>) : void => {
+const unhandledRejectionHandler = (reason: Error| unknown, promise: Promise<unknown>) : void => {
     const data: string = '\nUnhandled Rejection at:' + promise + 'reason: ' + reason +'\n';
     console.log('Unhandled Rejection at:', promise, 'reason:', reason);
     appendFileSync(errorLogsPath, data);
