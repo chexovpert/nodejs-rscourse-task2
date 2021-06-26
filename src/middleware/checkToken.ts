@@ -6,7 +6,6 @@ const { JWT_SECRET_KEY } = config;
 
 const checkToken = (req: Request, res: Response, next: NextFunction) => {
   const sessionToken = req.headers.authorization;
-  console.log(sessionToken);
   if (!sessionToken)
     return res.status(401).send({ auth: false, message: 'No token provided.' });
   else {
@@ -16,8 +15,7 @@ const checkToken = (req: Request, res: Response, next: NextFunction) => {
     } else {
       try {
         if (token === undefined) return undefined;
-        const res = jwt.verify(token, JWT_SECRET_KEY);
-        console.log(res);
+        jwt.verify(token, JWT_SECRET_KEY);
         //return next()
       } catch (e) {
         return res.status(409).send({ error: `not authorized` });
