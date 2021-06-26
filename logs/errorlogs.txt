@@ -2363,3 +2363,460 @@ Error Status Code:404
 Error message:board not found 
 Time:[0ms]
 Body:{}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[6ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: GET 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: POST 
+Url: /boards/undefined/tasks 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{"title":"Autotest task","order":0,"description":"Lorem ipsum","userId":null,"boardId":null,"columnId":null}
+
+Method: PUT 
+Url: /boards/undefined/tasks/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"error":"not authorizedJsonWebTokenError: jwt malformed","title":"Autotest updated task"}
+
+Method: GET 
+Url: /boards/undefined/tasks/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: DELETE 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: GET 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: PUT 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"error":"not authorizedJsonWebTokenError: jwt malformed","title":"Autotest updated board"}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: POST 
+Url: /boards 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"title":"Autotest board","columns":[{"title":"Backlog","order":1},{"title":"Sprint","order":2}]}
+
+Method: DELETE 
+Url: /boards/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[2ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/undefined 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "123"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/012276a1-2a93-44d9-a517-283972e6397f/tasks/b937ea3a-66c5-49f4-8e9d-a8ade9b66552 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/4c6e7393-01d6-41a5-84c1-705753d19be6 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0a4516ff-46a3-4809-9cea-03f9f941e61b/tasks/b25d9ddf-7b8f-42d4-b5af-2b6dcd6f4ea3 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0a4516ff-46a3-4809-9cea-03f9f941e61b/tasks/de0651c2-bbe5-46d1-888e-d5e3f0248977 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0a4516ff-46a3-4809-9cea-03f9f941e61b/tasks/bdb3553a-9971-48cf-8089-e9ee9f76b940 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0a4516ff-46a3-4809-9cea-03f9f941e61b/tasks/43f04648-6f77-4f98-953a-96d7f4531043 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/0a4516ff-46a3-4809-9cea-03f9f941e61b/tasks/580d1e6b-2a0a-43fa-8fc3-c9c59d51dc7e 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[8ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid token 
+Time:[2ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid token 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid token 
+Time:[1ms]
+Body:{}
+
+Method: POST 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid signature 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid token 
+Time:[5ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:JsonWebTokenError: invalid token 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[7ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /users/ 
+Error Status Code:500 
+Error:Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client 
+Time:[7ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Method: GET 
+Url: /boards/6cc3f507-d3dc-4704-904f-65a777ad9165 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8de01f86-b0e3-462c-be5c-8961ae86a2a4/tasks/786f7e0f-4732-4dbc-82c6-5a42fa011bca 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8de01f86-b0e3-462c-be5c-8961ae86a2a4/tasks/f80d4625-df31-4f5a-9c86-47d1192e7d09 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8de01f86-b0e3-462c-be5c-8961ae86a2a4/tasks/f2450731-254e-43db-b4f4-e7927a96ad64 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8de01f86-b0e3-462c-be5c-8961ae86a2a4/tasks/bff0c12c-6775-4431-a58f-a89798b9231e 
+Error Status Code:404 
+Error message:board not found 
+Time:[1ms]
+Body:{}
+
+Method: GET 
+Url: /boards/8de01f86-b0e3-462c-be5c-8961ae86a2a4/tasks/aa625fe8-8467-44f6-8fbb-114dad45c42b 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Method: GET 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: PUT 
+Url: /users/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[1ms]
+Body:{"name":"Autotest updated TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: DELETE 
+Url: /users/undefined 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{}
+
+Method: POST 
+Url: /users 
+Error Status Code:500 
+Error:JsonWebTokenError: jwt malformed 
+Time:[0ms]
+Body:{"name":"TEST_USER","login":"test_user","password":"T35t_P@55w0rd"}
+
+Method: GET 
+Url: /boards/a9c79397-932a-49ee-8105-343e1feb7c01/tasks/c1fe5722-9a59-48ae-80eb-008f58cbae6a 
+Error Status Code:404 
+Error message:board not found 
+Time:[0ms]
+Body:{}
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
+
+Unhandled Rejection at:[object Promise]reason: QueryFailedError: неверный синтаксис для типа uuid: "12345"
